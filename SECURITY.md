@@ -16,9 +16,9 @@ The latest minor release of ContentForge receives security fixes. Older minor ve
 
 ### How to report
 
-Use GitHub's [Private Security Advisory](https://github.com/indranilbanerjee/contentforge/security/advisories/new) feature to report privately. The maintainer will be notified directly and can collaborate with you on a fix before disclosure.
+Use GitHub's [Private Security Advisory](https://github.com/teachskillofskills-ai/ContentForge-techshu/security/advisories/new) feature to report privately. The maintainer will be notified directly and can collaborate with you on a fix before disclosure.
 
-If you cannot use Private Security Advisories, contact the maintainer via the email listed on [indranil.in](https://indranil.in) with the subject line `[CF Security]`.
+If you cannot use Private Security Advisories, contact the maintainer via the email listed on [techshu.ai](https://techshu.ai) with the subject line `[CF Security]`.
 
 ### What to include
 

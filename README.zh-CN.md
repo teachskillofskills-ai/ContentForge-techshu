@@ -8,9 +8,9 @@
 
 对每个选题运行 `/contentforge:create-content`。10 阶段流水线会产出一份可直接发布的 `.docx`：内置 43 模式人性化引擎、事实核查子代理、三类内部链接，以及满足 EU AI Act 合规要求的 C2PA 内容溯源——每篇仅需 30–60 分钟。接下来是任何单发式工具都不具备的部分：**生命周期闭环。** 每一篇已发布的内容都会被持续度量、接受内容衰减审计，并回馈到下一期内容日历与下一份内容简报中——一切通过持久化的文件契约实现，因此系统对你品牌的认知不会随着学到它的那次会话结束而消失。
 
-开源企业级内容生产系统——**22 个技能 · 13 个专家代理 · 10 道质量门 · 43 模式 AI 痕迹人性化引擎 · 一个在流水线宣告完成之前重新推导每道质量门的运行审计器 · 28 个纯标准库 Python 脚本**。由 [Indranil Banerjee](https://indranil.in) 创建 · [LinkedIn](https://www.linkedin.com/in/askneelnow/) · [X](https://x.com/askneelnow)。
+开源企业级内容生产系统——**22 个技能 · 13 个专家代理 · 10 道质量门 · 43 模式 AI 痕迹人性化引擎 · 一个在流水线宣告完成之前重新推导每道质量门的运行审计器 · 28 个纯标准库 Python 脚本**。
 
-**版本 4.1.2** · [更新日志](CHANGELOG.md) · MIT 许可证 · [赞助本项目 ❤](https://github.com/sponsors/indranilbanerjee)
+**版本 4.1.2** · [更新日志](CHANGELOG.md) · MIT 许可证
 
 ---
 
@@ -50,43 +50,43 @@
 **Claude Code（CLI 或 VS Code/JetBrains 扩展）：**
 
 ```bash
-/plugin marketplace add indranilbanerjee/neels-plugins
-/plugin install contentforge@neels-plugins
+/plugin marketplace add teachskillofskills-ai/techshu-marketplace
+/plugin install contentforge@techshu
 ```
 
-**Anthropic Cowork：**在界面中打开 **Plugins** 面板 → Add marketplace → `indranilbanerjee/neels-plugins` → 安装 ContentForge。（`/plugin` 斜杠命令在 Cowork 中不可用——请使用 UI 面板。）随后运行一次 `/contentforge:cf-cowork-setup`，接入 Google Drive 以实现团队共享输出。
+**Anthropic Cowork：**在界面中打开 **Plugins** 面板 → Add marketplace → `teachskillofskills-ai/techshu-marketplace` → 安装 ContentForge。（`/plugin` 斜杠命令在 Cowork 中不可用——请使用 UI 面板。）随后运行一次 `/contentforge:cf-cowork-setup`，接入 Google Drive 以实现团队共享输出。
 
 **OpenAI Codex（CLI + IDE + App）：**
 
 ```bash
-codex plugin marketplace add indranilbanerjee/neels-plugins
-codex plugin install contentforge@neels-plugins
+codex plugin marketplace add teachskillofskills-ai/techshu-marketplace
+codex plugin install contentforge@techshu
 ```
 
 **其他平台：**
 
 ```bash
 # Cursor 2.5+ (in any Cursor Agent chat):
-/add-plugin contentforge@https://github.com/indranilbanerjee/contentforge
+/add-plugin contentforge@https://github.com/teachskillofskills-ai/ContentForge-techshu
 
 # GitHub Copilot CLI:
-copilot plugin marketplace add indranilbanerjee/neels-plugins
-copilot plugin install contentforge@neels-plugins
+copilot plugin marketplace add teachskillofskills-ai/techshu-marketplace
+copilot plugin install contentforge@techshu
 
 # Google Antigravity 2.0:
-agy plugin install https://github.com/indranilbanerjee/contentforge
+agy plugin install https://github.com/teachskillofskills-ai/ContentForge-techshu
 
 # Hermes Agent (Nous Research):
-hermes plugins install indranilbanerjee/contentforge
+hermes plugins install teachskillofskills-ai/ContentForge-techshu
 
 # OpenClaw:
-openclaw plugins install git:github.com/indranilbanerjee/contentforge
+openclaw plugins install git:github.com/teachskillofskills-ai/ContentForge-techshu
 
 # Grok (xAI Build CLI):
-grok plugin install indranilbanerjee/contentforge
+grok plugin install teachskillofskills-ai/ContentForge-techshu
 ```
 
-**claude.ai（网页版）：**从[最新发行版](https://github.com/indranilbanerjee/contentforge/releases/latest)下载一个主打技能——`cf-brief.skill`、`cf-social-adapt.skill`、`cf-translate.skill`、`cf-video-script.skill` 或 `cf-aeo-check.skill`——然后在 claude.ai 中依次进入：**Settings → Capabilities**（启用 *Code execution and file creation*）→ **Customize → Skills → Upload skill**。完整流水线依赖子代理调度，需在上述平台运行；主打技能可独立使用。
+**claude.ai（网页版）：**从[最新发行版](https://github.com/teachskillofskills-ai/ContentForge-techshu/releases/latest)下载一个主打技能——`cf-brief.skill`、`cf-social-adapt.skill`、`cf-translate.skill`、`cf-video-script.skill` 或 `cf-aeo-check.skill`——然后在 claude.ai 中依次进入：**Settings → Capabilities**（启用 *Code execution and file creation*）→ **Customize → Skills → Upload skill**。完整流水线依赖子代理调度，需在上述平台运行；主打技能可独立使用。
 
 **ChatGPT 及其他 Agent Plugins 1.0 宿主：**ContentForge 在仓库根目录提供基于 OpenAI 厂商中立标准 Agent Plugins 1.0 的 `plugin.json`。在不支持子代理调度的宿主上，**便携执行通道**会在单个对话中顺序运行完整流水线——阶段相同、产物相同、质量门相同。
 
@@ -133,25 +133,25 @@ grok plugin install indranilbanerjee/contentforge
 
 | 平台 | 安装方式 |
 |---|---|
-| **Claude Code**（CLI + IDE） | `/plugin install contentforge@neels-plugins` |
-| **Anthropic Cowork** | Plugins 面板 → Add marketplace → `indranilbanerjee/neels-plugins` |
-| **OpenAI Codex** | `codex plugin install contentforge@neels-plugins` |
-| **Cursor 2.5+** | `/add-plugin contentforge@https://github.com/indranilbanerjee/contentforge` |
-| **GitHub Copilot CLI** | `copilot plugin install contentforge@neels-plugins` |
-| **Google Antigravity 2.0** | `agy plugin install https://github.com/indranilbanerjee/contentforge` |
-| **Hermes Agent** | `hermes plugins install indranilbanerjee/contentforge` |
-| **OpenClaw** | `openclaw plugins install git:github.com/indranilbanerjee/contentforge` |
-| **Grok**（xAI Build CLI） | `grok plugin install indranilbanerjee/contentforge` |
-| **claude.ai**（网页版） | 从[发行版](https://github.com/indranilbanerjee/contentforge/releases/latest)上传主打 `.skill` |
+| **Claude Code**（CLI + IDE） | `/plugin install contentforge@techshu` |
+| **Anthropic Cowork** | Plugins 面板 → Add marketplace → `teachskillofskills-ai/techshu-marketplace` |
+| **OpenAI Codex** | `codex plugin install contentforge@techshu` |
+| **Cursor 2.5+** | `/add-plugin contentforge@https://github.com/teachskillofskills-ai/ContentForge-techshu` |
+| **GitHub Copilot CLI** | `copilot plugin install contentforge@techshu` |
+| **Google Antigravity 2.0** | `agy plugin install https://github.com/teachskillofskills-ai/ContentForge-techshu` |
+| **Hermes Agent** | `hermes plugins install teachskillofskills-ai/ContentForge-techshu` |
+| **OpenClaw** | `openclaw plugins install git:github.com/teachskillofskills-ai/ContentForge-techshu` |
+| **Grok**（xAI Build CLI） | `grok plugin install teachskillofskills-ai/ContentForge-techshu` |
+| **claude.ai**（网页版） | 从[发行版](https://github.com/teachskillofskills-ai/ContentForge-techshu/releases/latest)上传主打 `.skill` |
 | **ChatGPT / Agent Plugins 1.0 宿主** | 根目录 `plugin.json` 包 + 便携执行通道 |
 
-全部 22 个 SKILL.md 文件均通过 Agent Skills 开放标准实现跨平台移植——任何兼容客户端都可直接指向 `https://github.com/indranilbanerjee/contentforge/tree/master/skills`。
+全部 22 个 SKILL.md 文件均通过 Agent Skills 开放标准实现跨平台移植——任何兼容客户端都可直接指向 `https://github.com/teachskillofskills-ai/ContentForge-techshu/tree/master/skills`。
 
 ---
 
 ## 更新
 
-**Claude Code：**第三方市场默认关闭自动更新。只需开启一次：`/plugin` → **Marketplaces** 标签页 → `neels-plugins` → **Enable auto-update**。或手动更新：先执行 `/plugin marketplace update neels-plugins`，再执行 `/plugin uninstall` + `/plugin install contentforge@neels-plugins` + `/reload-plugins`。
+**Claude Code：**第三方市场默认关闭自动更新。只需开启一次：`/plugin` → **Marketplaces** 标签页 → `techshu` → **Enable auto-update**。或手动更新：先执行 `/plugin marketplace update techshu`，再执行 `/plugin uninstall` + `/plugin install contentforge@techshu` + `/reload-plugins`。
 
 **Cowork / claude.ai / Claude Desktop：**打开 Plugins UI 面板 → 移除 ContentForge → 从市场重新安装（重新拉取即会获得最新版本）。
 
@@ -173,8 +173,8 @@ grok plugin install indranilbanerjee/contentforge
 
 ## 关于维护者
 
-ContentForge 由 **[Indranil "Neel" Banerjee](https://indranil.in)** 构建并维护——一位以信息安全为起点、其后横跨增长营销、企业数字化运营与 AI 转型的构建者与系统思考者。本项目是 **Neelverse Marketing Suite** 三插件套装的一员，另外两件是 [Digital Marketing Pro](https://github.com/indranilbanerjee/digital-marketing-pro) 与 [SocialForge](https://github.com/indranilbanerjee/socialforge)。
+ContentForge 由 **Indus Net TechShu Digital Pvt. Ltd.** 开发和维护。它与 [Digital Marketing Pro](https://github.com/teachskillofskills-ai/DigitalMarketingPro-techshu) 和 [SocialForge](https://github.com/teachskillofskills-ai/SocialForge-techshu) 一同构成三个插件的 **TechShu Marketing Suite**。
 
-如果 ContentForge 为你的团队节省了时间，欢迎[⭐ 为仓库加星](https://github.com/indranilbanerjee/contentforge/stargazers)，也欢迎考虑[赞助本项目 ❤](https://github.com/sponsors/indranilbanerjee)——这能让发布节奏保持可持续。
+最初由 Indranil Banerjee 创建，采用 MIT 许可；TechShu 版本单独维护。
 
-**许可证：**MIT · **安全：**[私密安全通报](https://github.com/indranilbanerjee/contentforge/security/advisories/new) · **问题反馈：**[GitHub Issues](https://github.com/indranilbanerjee/contentforge/issues)
+**许可证：**MIT · **安全：**[私密安全通报](https://github.com/teachskillofskills-ai/ContentForge-techshu/security/advisories/new) · **问题反馈：**[GitHub Issues](https://github.com/teachskillofskills-ai/ContentForge-techshu/issues)

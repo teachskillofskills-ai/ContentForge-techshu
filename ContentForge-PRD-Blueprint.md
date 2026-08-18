@@ -5,7 +5,7 @@
 > stood before build; the shipped product is documented in README.md and CHANGELOG.md.
 
 **Product:** ContentForge — Enterprise Multi-Agent Content Generation Platform
-**Author:** Indranil "Neel" Banerjee
+**Author:** Indranil Banerjee (original February 2026 PRD)
 **Version:** 1.0
 **Date:** February 16, 2026
 **Status:** Architecture Complete → Build Phase

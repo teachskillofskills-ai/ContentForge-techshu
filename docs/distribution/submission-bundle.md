@@ -30,7 +30,7 @@ ready to paste; items marked **[owner action]** need the account holder.
   history feeding freshness, verified brand links persisting, and cross-run
   telemetry informing briefs behind recurrence floors (never gates). Works
   with subagent dispatch or fully portable single-context execution.
-- **Homepage / repo / support:** https://github.com/indranilbanerjee/contentforge
+- **Homepage / repo / support:** https://github.com/teachskillofskills-ai/ContentForge-techshu
 - **License:** MIT
 - **Policy note for reviewers:** no hardcoded model ids, prices, or vendors
   (guarded by tests); AI-assistance disclosure layer on by default; no watermark

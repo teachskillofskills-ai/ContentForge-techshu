@@ -34,7 +34,7 @@ FILE_ALLOWLIST = {
 
 # A line mentioning a sibling is allowed only if it is clearly promo/infra:
 LINE_ALLOW_MARKERS = (
-    "github.com/indranilbanerjee/",   # links to the author's other repos
+    "github.com/teachskillofskills-ai/",   # links to the sibling TechShu repos
     "/plugin install",                # marketplace install commands
     "claude plugin install",
 )

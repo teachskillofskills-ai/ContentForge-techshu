@@ -45,7 +45,7 @@ import urllib.robotparser
 from datetime import datetime, timezone
 from html.parser import HTMLParser
 
-UA = "ContentForge-BrandHarvester/1.0 (+https://github.com/indranilbanerjee/contentforge)"
+UA = "ContentForge-BrandHarvester/1.0 (+https://github.com/teachskillofskills-ai/ContentForge-techshu)"
 SKIP_EXTENSIONS = (".pdf", ".jpg", ".jpeg", ".png", ".gif", ".svg", ".zip", ".doc",
                    ".docx", ".xls", ".xlsx", ".ppt", ".pptx", ".mp4", ".webp", ".ico",
                    ".css", ".js", ".xml", ".rss")

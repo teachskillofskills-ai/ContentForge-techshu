@@ -3,7 +3,7 @@
 resolve_model.py — Model curator: resolve aliases, check deprecation, list models.
 
 Single source of truth for what model IDs to pass to provider SDKs across the
-Neelverse Marketing Suite. Scripts MUST NOT hardcode model strings; they should
+TechShu Marketing Suite. Scripts MUST NOT hardcode model strings; they should
 call resolve() (or the CLI) so a single registry edit propagates everywhere
 and deprecated IDs surface as warnings instead of silent 404s.
 
@@ -276,7 +276,7 @@ def _cmd_check_params(path_str: str, *, as_json: bool = False) -> int:
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Resolve, check, and list curated AI models for the Neelverse Marketing Suite."
+        description="Resolve, check, and list curated AI models for the TechShu Marketing Suite."
     )
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument("--alias", help="Resolve an alias (e.g. latest-fast-anthropic) OR a model id")

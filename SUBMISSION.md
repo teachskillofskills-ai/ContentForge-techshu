@@ -7,9 +7,9 @@
 
 **Plugin:** ContentForge
 **Version at submission:** 3.10.0
-**Submitter:** Indranil Banerjee — neel@neelverse.com
-**Repository:** https://github.com/indranilbanerjee/contentforge
-**Marketplace:** https://github.com/indranilbanerjee/neels-plugins
+**Submitter:** Indus Net TechShu Digital Pvt. Ltd.
+**Repository:** https://github.com/teachskillofskills-ai/ContentForge-techshu
+**Marketplace:** https://github.com/teachskillofskills-ai/techshu-marketplace
 **Last updated:** 2026-05-17
 
 This file is the submission packet for the Anthropic Software Directory. It is **not** the directory listing — that is submitted via the form at https://platform.claude.com/plugins/submit. This packet pre-stages every input the form will ask for so submission takes ~5 minutes, not hours.
@@ -86,14 +86,14 @@ Processes 10–50+ pieces in parallel across multiple brands with queue manageme
 
 ## 6. Testing account / sample data
 
-**Testing account:** Reviewers install from the public marketplace at `indranilbanerjee/neels-plugins` and use `config/brand-registry-template.json` as sample brand input. Knowledge-only mode (default) runs all 22 skills + 13 agents + 10 industry knowledge packs with zero external API keys beyond Claude. Optional Python deps: `python-docx` (auto-installed on first .docx generation), `c2pa-python` + `cryptography` (auto-installed on first `--c2pa-sign` invocation).
+**Testing account:** Reviewers install from the public marketplace at `teachskillofskills-ai/techshu-marketplace` and use `config/brand-registry-template.json` as sample brand input. Knowledge-only mode (default) runs all 22 skills + 13 agents + 10 industry knowledge packs with zero external API keys beyond Claude. Optional Python deps: `python-docx` (auto-installed on first .docx generation), `c2pa-python` + `cryptography` (auto-installed on first `--c2pa-sign` invocation).
 
 **Sample worked output:** the pharma whitepaper described in Use Case 1 above demonstrates the full pipeline output shape (humanized.md + reports.json + .docx with 4 appendices). Reviewers can reproduce by running `/contentforge:create-content` with the same topic.
 
 ## 7. Ownership verification
 
-- **Repo:** github.com/indranilbanerjee/contentforge — owned by @indranilbanerjee
-- **Marketplace:** github.com/indranilbanerjee/neels-plugins — same owner
+- **Repo:** github.com/teachskillofskills-ai/ContentForge-techshu — owned by the GitHub organisation account @teachskillofskills-ai
+- **Marketplace:** github.com/teachskillofskills-ai/techshu-marketplace — same owner
 - **Third-party services referenced:** all MCP connectors point to official endpoints (Notion, Canva, Figma, Webflow, Slack, Gmail, Google Calendar, fal.ai, Replicate, Pipedream / Composio / Zapier / Make aggregators). No scraping, no credential interception, no impersonation.
 - **Trademarks:** "ContentForge" is the submitter's mark.
 
@@ -144,7 +144,7 @@ Capture before submitting:
 
 1. Open https://platform.claude.com/plugins/submit
 2. Plugin name: `contentforge`
-3. Marketplace source: `github.com/indranilbanerjee/neels-plugins` (custom marketplace) OR `github.com/indranilbanerjee/contentforge` (direct repo)
+3. Marketplace source: `github.com/teachskillofskills-ai/techshu-marketplace` (custom marketplace) OR `github.com/teachskillofskills-ai/ContentForge-techshu` (direct repo)
 4. Paste section 1 (one-line) into Short description
 5. Paste section 2 (long description) into Description
 6. Category: Marketing & Sales (primary), Productivity (secondary)

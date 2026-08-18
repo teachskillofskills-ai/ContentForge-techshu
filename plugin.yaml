@@ -9,7 +9,7 @@
 # Tested against: Hermes Desktop v0.15.2 (June 2026 public preview)
 #
 # Install for Hermes users:
-#   hermes plugins install indranilbanerjee/contentforge
+#   hermes plugins install teachskillofskills-ai/ContentForge-techshu
 
 name: contentforge
 version: 4.1.2
@@ -17,9 +17,9 @@ description: >-
   Open-source enterprise content production plugin. 22 skills, 13 specialist
   agents, 10 quality gates, 41-pattern AI humanizer, fact-checker, real .docx
   output with C2PA signing (EU AI Act Article 50 ready). Now native on Hermes.
-author: Indranil Banerjee
+author: Indus Net TechShu Digital Pvt. Ltd.
 license: MIT
-homepage: https://github.com/indranilbanerjee/contentforge
+homepage: https://github.com/teachskillofskills-ai/ContentForge-techshu
 
 provides_tools: []
 provides_hooks: []

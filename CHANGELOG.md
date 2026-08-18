@@ -72,7 +72,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 **Author presence.**
 
-- `docs/assets/author-banner.svg` (maintainer identity + Neelverse suite +
+- `docs/assets/author-banner.svg` (maintainer identity + TechShu suite +
   sponsor call-to-action) linked at the top of the README to GitHub Sponsors;
   language-switcher line added at the very top.
 
@@ -89,7 +89,7 @@ Tests: 514 → 520.
 - New `.grok-plugin/plugin.json` (mirrors the Claude manifest, plus the
   `"skills": "./skills/"` pointer Grok's loader uses) and
   `.grok-plugin/marketplace.json` (single-plugin marketplace source, so
-  `grok plugin marketplace add indranilbanerjee/contentforge` works directly).
+  `grok plugin marketplace add teachskillofskills-ai/ContentForge-techshu` works directly).
 - Grok also reads the Claude Code manifests for compatibility
   ([Grok Build docs](https://docs.x.ai/build/features/skills-plugins-marketplaces));
   the native pair is the first-class lane and what an official xAI marketplace
@@ -1534,14 +1534,14 @@ Brings ContentForge into parity with DMP v3.13.0+ on cross-platform support. Eve
 
 - **`plugin.yaml`** at repo root with required fields (name, version, description, author, license, homepage). Zero env vars, zero global hooks (matches the rest of the suite's policy).
 - **`__init__.py`** at repo root exposing `register(ctx)` that Hermes calls at plugin load. Walks the `skills/` directory and exposes all 21 ContentForge skills via `ctx.register_skill(name, path)`. Defensive coding throughout — stdlib only; if Hermes API differs from spec, the adapter logs and degrades gracefully instead of crashing. Includes an `audit()` introspection function for pre-install sanity checks.
-- Install command: `hermes plugins install indranilbanerjee/contentforge`.
+- Install command: `hermes plugins install teachskillofskills-ai/ContentForge-techshu`.
 - Spec source: https://hermes-agent.nousresearch.com/docs/guides/build-a-hermes-plugin
 - Targets Hermes Desktop v0.15.2 (public preview June 2 2026).
 
 ### Added — Native OpenClaw manifest
 
 - **`openclaw.plugin.json`** at repo root with required `id` + `configSchema`, optional `name`/`description`/`version`/`skills: ["./skills"]`. OpenClaw auto-detects our existing `.claude-plugin/plugin.json` as a Claude-compatible bundle fallback, but shipping the native manifest enables ClawHub marketplace eligibility + first-class discoverability.
-- Install command: `openclaw plugins install git:github.com/indranilbanerjee/contentforge`.
+- Install command: `openclaw plugins install git:github.com/teachskillofskills-ai/ContentForge-techshu`.
 - Spec source: https://docs.openclaw.ai/plugins/manifest
 
 ### Added — Test suite (0 → 23, all passing)
@@ -1592,7 +1592,7 @@ Brings ContentForge into parity with DMP v3.13.0+ on cross-platform support. Eve
 ### How to update
 
 ```bash
-/plugin update contentforge@neels-plugins
+/plugin update contentforge@techshu
 /reload-plugins
 ```
 
@@ -1841,7 +1841,7 @@ User report from the v3.12.6 testing cycle: "Even if Google Drive is added or th
 
 ## [3.12.5] - 2026-05-25
 
-**README fix for the "claude.ai web" gotcha.** User-team feedback from Shreea (v3.12.2-cycle WhatsApp screenshot): she ran `/plugin update contentforge@neels-plugins` in claude.ai web chat and saw `"/plugin isn't available in this environment"`. The plugin was installed (her `cf-*` skills showed up correctly), but the `/plugin` slash command itself is not supported in claude.ai web — only in Claude Code CLI / Desktop / Cowork. Our previous README did not surface this.
+**README fix for the "claude.ai web" gotcha.** User-team feedback from Shreea (v3.12.2-cycle WhatsApp screenshot): she ran `/plugin update contentforge@techshu` in claude.ai web chat and saw `"/plugin isn't available in this environment"`. The plugin was installed (her `cf-*` skills showed up correctly), but the `/plugin` slash command itself is not supported in claude.ai web — only in Claude Code CLI / Desktop / Cowork. Our previous README did not surface this.
 
 ### Changed
 
@@ -1903,7 +1903,7 @@ All 4 also: dual-copy save works (tracking + `~/Documents/ContentForge/`), valid
 
 ## [3.12.2] - 2026-05-25
 
-**Model curator + correctness sweep.** Adds the shared model-selection infrastructure used across the Neelverse Marketing Suite, plus correctness fixes.
+**Model curator + correctness sweep.** Adds the shared model-selection infrastructure used across the TechShu Marketing Suite, plus correctness fixes.
 
 ### Added
 
@@ -1926,14 +1926,14 @@ All 4 also: dual-copy save works (tracking + `~/Documents/ContentForge/`), valid
 
 ### Added
 
-- **`CODE_OF_CONDUCT.md`** (Contributor Covenant v2.1, adapted for the Neelverse Marketing Suite scope)
+- **`CODE_OF_CONDUCT.md`** (Contributor Covenant v2.1, adapted for the TechShu Marketing Suite scope)
 - **`SECURITY.md`** with supported-versions table (3.12.x ✅, 3.11.x ⚠️, < 3.11 ❌), private-vulnerability-reporting flow via GitHub Private Security Advisories, coordinated-disclosure timeline (Day 0 ack → Day 7 assessment → Day 30 patch → Day 45 advisory), and operator hardening recommendations (don't commit `.mcp.json`, treat brand data as sensitive, rotate keys quarterly)
 - **`.github/PULL_REQUEST_TEMPLATE.md`** — 5-platform coverage checklist, version-bump-in-all-sibling-manifests reminder, primary-source-required clause for compliance updates, AI-content disclosure clause
 - **`.github/ISSUE_TEMPLATE/`** with `bug_report.md` and `feature_request.md`
 - **Star History chart** in README — visual social proof via star-history.com
 - **"Why ContentForge" section** with 7-row comparison table covering the 11-phase pipeline, 29-pattern AI-detection humanizer, fact-checker subagent, three-category internal linking, real `.docx` output, C2PA signing, and 5-platform portability
 - **"5 coding-agent surfaces" install matrix** at the top of README
-- **"About the maintainer" section** with [indranil.in](https://indranil.in), [linkedin.com/in/askneelnow](https://www.linkedin.com/in/askneelnow), [@askneelnow](https://x.com/askneelnow), other Neelverse plugins, Discussions, Issues, Security
+- **"About the maintainer" section** with the author website, LinkedIn and X links, other TechShu plugins, Discussions, Issues, Security
 - **"Contributing" section** in README now references CoC + PR template + SECURITY.md explicitly
 - **⭐ Star CTAs** at hero, maintainer section, and footer
 
@@ -1941,8 +1941,8 @@ All 4 also: dual-copy save works (tracking + `~/Documents/ContentForge/`), valid
 
 - **Hero rewritten** — leads with "Open-source enterprise content production pipeline" positioning, badges row (version 3.12.1, license, stars, forks, issues, last-commit, Cowork-compatible, EU AI Act Article 50 ready, 5 platforms), install command moved to top of document
 - **Auto-update text** — stale version reference v3.9.5 → v3.12.1
-- **Neelverse Marketing Suite** table corrected: DMP "149 skills" → "150 skills"
-- **plugin.json description** rewritten to lead with "Open-source enterprise content production pipeline" and include all current asset counts (19 skills, 13 agents, 11 quality gates, 29-pattern humanizer, 5-platform install). Now references indranil.in explicitly.
+- **TechShu Marketing Suite** table corrected: DMP "149 skills" → "150 skills"
+- **plugin.json description** rewritten to lead with "Open-source enterprise content production pipeline" and include all current asset counts (19 skills, 13 agents, 11 quality gates, 29-pattern humanizer, 5-platform install). Now references techshu.ai explicitly.
 - **plugin.json keywords expanded 16 → 47** for Claude marketplace + Codex/Cursor/Copilot directory search. Added: `content-pipeline`, `ai-content`, `ai-writing`, `ai-humanizer`, `anti-ai-detection`, `gptzero`, `originality-ai`, `fact-checker`, `docx-generation`, `long-form-content`, `white-papers`, `blog-writing`, `ai-mode`, `ai-overviews`, `internal-linking`, `c2pa`, `content-provenance`, `eu-ai-act`, `article-50`, `claude-code-plugin`, `claude-skills`, `agent-skills`, `anthropic-claude`, `openai-codex`, `cursor-plugin`, `github-copilot`, `antigravity`, `mcp`, `model-context-protocol`, `marketing-plugin`, `ai-marketing`, `neelverse`, and more.
 
 ### Fixed
@@ -1971,7 +1971,7 @@ All 4 also: dual-copy save works (tracking + `~/Documents/ContentForge/`), valid
 
 ### Added
 
-- **GitHub Copilot CLI compatibility — no new manifest needed.** Copilot CLI's plugin discovery explicitly accepts `.claude-plugin/plugin.json` as one of its manifest paths (alongside `.plugin/plugin.json`, `plugin.json`, `.github/plugin/plugin.json`). ContentForge's existing Claude Code manifest is therefore directly readable by Copilot CLI. Install: `copilot plugin install indranilbanerjee/contentforge`. The 16 opt-in HTTP MCP connectors, `hooks/hooks.json`, and SKILL.md auto-discovery all work natively.
+- **GitHub Copilot CLI compatibility — no new manifest needed.** Copilot CLI's plugin discovery explicitly accepts `.claude-plugin/plugin.json` as one of its manifest paths (alongside `.plugin/plugin.json`, `plugin.json`, `.github/plugin/plugin.json`). ContentForge's existing Claude Code manifest is therefore directly readable by Copilot CLI. Install: `copilot plugin install teachskillofskills-ai/ContentForge-techshu`. The 16 opt-in HTTP MCP connectors, `hooks/hooks.json`, and SKILL.md auto-discovery all work natively.
 - **`.antigravity/plugin.json`** — Experimental manifest for Google Antigravity 2.0 CLI (launched 19 May 2026, replacing Gemini CLI). Mirrors the Gemini-CLI-extensions format that Antigravity's `agy plugin import gemini` converter accepts. Includes `_status` field flagging the experimental nature.
 - **`docs/cross-platform-install.md` — expanded** to cover all 5 platforms with install commands, what works natively per platform, the Antigravity caveat (spec not yet public), update commands per platform, and where to file platform-specific bugs.
 
@@ -2197,10 +2197,10 @@ The v3.9.1 manifest hardening introduced two fields that Claude Code's plugin sc
 
 #### Changes
 
-- **`repository` field**: converted from npm-shorthand object form (`{type: "git", url: "..."}`) to the string URL form Claude Code's plugin schema requires. New value: `"https://github.com/indranilbanerjee/contentforge.git"`.
+- **`repository` field**: converted from npm-shorthand object form (`{type: "git", url: "..."}`) to the string URL form Claude Code's plugin schema requires. New value: `"https://github.com/teachskillofskills-ai/ContentForge-techshu.git"`.
 - **`$schema` field removed**: although `$schema` is a standard JSON convention for editor validation, Claude Code's plugin schema parser rejects unknown top-level keys. Editor validation benefit isn't worth a broken install.
 
-Same fixes shipped same-day to digital-marketing-pro v3.2.1, socialforge v1.5.2, and the marketplace.json (neels-plugins v2.8.0). Anyone hitting the install error since v3.9.1 should now run `claude plugin update contentforge@neels-plugins` to pick up v3.9.2.
+Same fixes shipped same-day to digital-marketing-pro v3.2.1, socialforge v1.5.2, and the marketplace.json (techshu v2.8.0). Anyone hitting the install error since v3.9.1 should now run `claude plugin update contentforge@techshu` to pick up v3.9.2.
 
 ### Migration
 
@@ -2339,7 +2339,7 @@ Audit confirmed via current Claude Code docs that:
 - `SubagentStart` (alongside `SubagentStop`, `SessionEnd`, `PreCompact`, `PostCompact`, `Notification`, etc.) is a valid hook event
 - Both `type: "command"` and `type: "prompt"` hooks are supported with no documented preference
 - Plugin-bundled MCP servers auto-start with no opt-in toggle (motivating fix #2 above)
-- The `source: "github"` marketplace format the user employs in `neels-plugins` remains current
+- The `source: "github"` marketplace format the user employs in `techshu` remains current
 
 ### Migration
 
@@ -3249,28 +3249,29 @@ This patch release resolves the core installation and management issues reported
 
 ## Reporting Issues
 
-Found a bug or have a feature request? Please open an issue on [GitHub Issues](https://github.com/indranilbanerjee/contentforge/issues).
+Found a bug or have a feature request? Please open an issue on [GitHub Issues](https://github.com/teachskillofskills-ai/ContentForge-techshu/issues).
 
 ---
 
 ## Credits
 
-**Created by:** Indranil Banerjee
+**Created by:** Indranil Banerjee (original release)
+**Maintained by:** Indus Net TechShu Digital Pvt. Ltd.
 **Platform:** Claude Code & Cowork
 **License:** MIT
 
 ---
 
-[3.5.0]: https://github.com/indranilbanerjee/contentforge/releases/tag/v3.5.0
-[3.4.1]: https://github.com/indranilbanerjee/contentforge/releases/tag/v3.4.1
-[3.4.0]: https://github.com/indranilbanerjee/contentforge/releases/tag/v3.4.0
-[3.3.0]: https://github.com/indranilbanerjee/contentforge/releases/tag/v3.3.0
-[3.2.0]: https://github.com/indranilbanerjee/contentforge/releases/tag/v3.2.0
-[3.1.0]: https://github.com/indranilbanerjee/contentforge/releases/tag/v3.1.0
-[3.0.0]: https://github.com/indranilbanerjee/contentforge/releases/tag/v3.0.0
-[2.1.0]: https://github.com/indranilbanerjee/contentforge/releases/tag/v2.1.0
-[2.0.2]: https://github.com/indranilbanerjee/contentforge/releases/tag/v2.0.2
-[2.0.1]: https://github.com/indranilbanerjee/contentforge/releases/tag/v2.0.1
-[2.0.0]: https://github.com/indranilbanerjee/contentforge/releases/tag/v2.0.0
-[1.0.0]: https://github.com/indranilbanerjee/contentforge/releases/tag/v1.0.0
-[Unreleased]: https://github.com/indranilbanerjee/contentforge/compare/v3.5.0...HEAD
+[3.5.0]: https://github.com/teachskillofskills-ai/ContentForge-techshu/releases/tag/v3.5.0
+[3.4.1]: https://github.com/teachskillofskills-ai/ContentForge-techshu/releases/tag/v3.4.1
+[3.4.0]: https://github.com/teachskillofskills-ai/ContentForge-techshu/releases/tag/v3.4.0
+[3.3.0]: https://github.com/teachskillofskills-ai/ContentForge-techshu/releases/tag/v3.3.0
+[3.2.0]: https://github.com/teachskillofskills-ai/ContentForge-techshu/releases/tag/v3.2.0
+[3.1.0]: https://github.com/teachskillofskills-ai/ContentForge-techshu/releases/tag/v3.1.0
+[3.0.0]: https://github.com/teachskillofskills-ai/ContentForge-techshu/releases/tag/v3.0.0
+[2.1.0]: https://github.com/teachskillofskills-ai/ContentForge-techshu/releases/tag/v2.1.0
+[2.0.2]: https://github.com/teachskillofskills-ai/ContentForge-techshu/releases/tag/v2.0.2
+[2.0.1]: https://github.com/teachskillofskills-ai/ContentForge-techshu/releases/tag/v2.0.1
+[2.0.0]: https://github.com/teachskillofskills-ai/ContentForge-techshu/releases/tag/v2.0.0
+[1.0.0]: https://github.com/teachskillofskills-ai/ContentForge-techshu/releases/tag/v1.0.0
+[Unreleased]: https://github.com/teachskillofskills-ai/ContentForge-techshu/compare/v3.5.0...HEAD

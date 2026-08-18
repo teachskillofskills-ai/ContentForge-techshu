@@ -63,7 +63,7 @@ In the Cowork sidebar, click **Plugins** (or go to **Settings → Plugins**).
 ### Step 3: Add the Marketplace
 Click **Add marketplace** and enter:
 ```
-indranilbanerjee/neels-plugins
+teachskillofskills-ai/techshu-marketplace
 ```
 
 The marketplace appears in the list with its available plugins.
@@ -1594,14 +1594,14 @@ If detected, loops back to Phase 3 for rewrite.
 **Q: Where can I get help?**
 **A:** Three options:
 1. **This guide** — Covers 95% of use cases
-2. **GitHub Issues:** [github.com/indranilbanerjee/contentforge/issues](https://github.com/indranilbanerjee/contentforge/issues)
-3. **Email:** indranilbanerjee21@gmail.com
+2. **GitHub Issues:** [github.com/teachskillofskills-ai/ContentForge-techshu/issues](https://github.com/teachskillofskills-ai/ContentForge-techshu/issues)
+3. **Your TechShu AI team contact**
 
 **Q: Can I request new features?**
-**A:** Yes! Open a feature request on [GitHub Issues](https://github.com/indranilbanerjee/contentforge/issues).
+**A:** Yes! Open a feature request on [GitHub Issues](https://github.com/teachskillofskills-ai/ContentForge-techshu/issues).
 
 **Q: Is there a community or forum?**
-**A:** Use GitHub Issues at [github.com/indranilbanerjee/contentforge/issues](https://github.com/indranilbanerjee/contentforge/issues).
+**A:** Use GitHub Issues at [github.com/teachskillofskills-ai/ContentForge-techshu/issues](https://github.com/teachskillofskills-ai/ContentForge-techshu/issues).
 
 ---
 
@@ -1630,13 +1630,13 @@ If detected, loops back to Phase 3 for rewrite.
 
 ---
 
-**Questions?** Email: indranilbanerjee21@gmail.com
-**Issues?** GitHub: [github.com/indranilbanerjee/contentforge/issues](https://github.com/indranilbanerjee/contentforge/issues)
+**Questions?** Ask your TechShu AI team contact.
+**Issues?** GitHub: [github.com/teachskillofskills-ai/ContentForge-techshu/issues](https://github.com/teachskillofskills-ai/ContentForge-techshu/issues)
 **Updates?** Watch the repo for the latest features!
 
 ---
 
 **Version:** 3.16.1
 **Last Updated:** 2026-07-29
-**Author:** Indranil 'Neel' Banerjee
+**Maintained by:** Indus Net TechShu Digital Pvt. Ltd.
 **License:** MIT

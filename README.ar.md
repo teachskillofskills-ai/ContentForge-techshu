@@ -8,9 +8,9 @@
 
 شغّل `/contentforge:create-content` على كل موضوع. ينتج خط الإنتاج المؤلف من 10 مراحل ملف `.docx` جاهزاً للنشر، مزوداً بمُؤنسِن يكشف 43 نمطاً من أنماط الذكاء الاصطناعي، ووكيل فرعي لتدقيق الحقائق، وربط داخلي بثلاث فئات، وإثبات مصدر C2PA للامتثال لقانون EU AI Act — في غضون 30–60 دقيقة لكل قطعة. ثم يأتي الجزء الذي لا تملكه أي أداة تكتفي بمسودة واحدة: **حلقة دورة الحياة.** كل قطعة منشورة تُقاس، وتُدقَّق بحثاً عن التقادم، وتُغذّى مجدداً في التقويم التالي والموجز التالي — عبر عقود ملفات دائمة، بحيث يبقى ما يتعلمه النظام عن علامتك التجارية حياً بعد انتهاء الجلسة التي تعلّمه فيها.
 
-نظام مفتوح المصدر لإنتاج المحتوى بمستوى المؤسسات — **22 مهارة · 13 وكيلاً متخصصاً · 10 بوابات جودة · مُؤنسِن لكشف أنماط الذكاء الاصطناعي يعمل بـ 43 نمطاً · مدقق تشغيل يعيد اشتقاق كل بوابة قبل أن يُسمح لأي تشغيل بإعلان اكتماله · 28 سكربت Python تعتمد على المكتبة القياسية وحدها**. من إنشاء [Indranil Banerjee](https://indranil.in) · [LinkedIn](https://www.linkedin.com/in/askneelnow/) · [X](https://x.com/askneelnow).
+نظام مفتوح المصدر لإنتاج المحتوى بمستوى المؤسسات — **22 مهارة · 13 وكيلاً متخصصاً · 10 بوابات جودة · مُؤنسِن لكشف أنماط الذكاء الاصطناعي يعمل بـ 43 نمطاً · مدقق تشغيل يعيد اشتقاق كل بوابة قبل أن يُسمح لأي تشغيل بإعلان اكتماله · 28 سكربت Python تعتمد على المكتبة القياسية وحدها**.
 
-**الإصدار 4.1.2** · [سجل التغييرات](CHANGELOG.md) · رخصة MIT · [ادعم هذا المشروع ❤](https://github.com/sponsors/indranilbanerjee)
+**الإصدار 4.1.2** · [سجل التغييرات](CHANGELOG.md) · رخصة MIT
 
 ---
 
@@ -50,43 +50,43 @@
 **Claude Code (سطر الأوامر أو امتداد VS Code/JetBrains):**
 
 ```bash
-/plugin marketplace add indranilbanerjee/neels-plugins
-/plugin install contentforge@neels-plugins
+/plugin marketplace add teachskillofskills-ai/techshu-marketplace
+/plugin install contentforge@techshu
 ```
 
-**Anthropic Cowork:** افتح لوحة **Plugins** في الواجهة ← Add marketplace ← `indranilbanerjee/neels-plugins` ← ثبّت ContentForge. (أوامر `/plugin` المائلة لا تعمل في Cowork — استخدم لوحة الواجهة.) ثم شغّل `/contentforge:cf-cowork-setup` مرة واحدة لربط Google Drive والحصول على مخرجات قابلة للمشاركة مع الفريق.
+**Anthropic Cowork:** افتح لوحة **Plugins** في الواجهة ← Add marketplace ← `teachskillofskills-ai/techshu-marketplace` ← ثبّت ContentForge. (أوامر `/plugin` المائلة لا تعمل في Cowork — استخدم لوحة الواجهة.) ثم شغّل `/contentforge:cf-cowork-setup` مرة واحدة لربط Google Drive والحصول على مخرجات قابلة للمشاركة مع الفريق.
 
 **OpenAI Codex (CLI + IDE + التطبيق):**
 
 ```bash
-codex plugin marketplace add indranilbanerjee/neels-plugins
-codex plugin install contentforge@neels-plugins
+codex plugin marketplace add teachskillofskills-ai/techshu-marketplace
+codex plugin install contentforge@techshu
 ```
 
 **منصات أخرى:**
 
 ```bash
 # Cursor 2.5+ (in any Cursor Agent chat):
-/add-plugin contentforge@https://github.com/indranilbanerjee/contentforge
+/add-plugin contentforge@https://github.com/teachskillofskills-ai/ContentForge-techshu
 
 # GitHub Copilot CLI:
-copilot plugin marketplace add indranilbanerjee/neels-plugins
-copilot plugin install contentforge@neels-plugins
+copilot plugin marketplace add teachskillofskills-ai/techshu-marketplace
+copilot plugin install contentforge@techshu
 
 # Google Antigravity 2.0:
-agy plugin install https://github.com/indranilbanerjee/contentforge
+agy plugin install https://github.com/teachskillofskills-ai/ContentForge-techshu
 
 # Hermes Agent (Nous Research):
-hermes plugins install indranilbanerjee/contentforge
+hermes plugins install teachskillofskills-ai/ContentForge-techshu
 
 # OpenClaw:
-openclaw plugins install git:github.com/indranilbanerjee/contentforge
+openclaw plugins install git:github.com/teachskillofskills-ai/ContentForge-techshu
 
 # Grok (xAI Build CLI):
-grok plugin install indranilbanerjee/contentforge
+grok plugin install teachskillofskills-ai/ContentForge-techshu
 ```
 
-**claude.ai (الويب):** نزّل إحدى المهارات البارزة من [أحدث إصدار](https://github.com/indranilbanerjee/contentforge/releases/latest) — `cf-brief.skill` أو `cf-social-adapt.skill` أو `cf-translate.skill` أو `cf-video-script.skill` أو `cf-aeo-check.skill` — ثم في claude.ai: **Settings → Capabilities** (فعّل *Code execution and file creation*) ← **Customize → Skills → Upload skill**. يحتاج خط الإنتاج الكامل إلى إيفاد وكلاء فرعيين ويعمل على المنصات المذكورة أعلاه؛ أما المهارات البارزة فتعمل بصورة مستقلة.
+**claude.ai (الويب):** نزّل إحدى المهارات البارزة من [أحدث إصدار](https://github.com/teachskillofskills-ai/ContentForge-techshu/releases/latest) — `cf-brief.skill` أو `cf-social-adapt.skill` أو `cf-translate.skill` أو `cf-video-script.skill` أو `cf-aeo-check.skill` — ثم في claude.ai: **Settings → Capabilities** (فعّل *Code execution and file creation*) ← **Customize → Skills → Upload skill**. يحتاج خط الإنتاج الكامل إلى إيفاد وكلاء فرعيين ويعمل على المنصات المذكورة أعلاه؛ أما المهارات البارزة فتعمل بصورة مستقلة.
 
 **ChatGPT وسائر مضيفي Agent Plugins 1.0:** يشحن ContentForge ملف `plugin.json` في الجذر وفق معيار Agent Plugins 1.0 المحايد تجاه المزوّدين من OpenAI. وعلى المضيفين الذين لا يدعمون إيفاد الوكلاء الفرعيين، يشغّل **مسار التنفيذ المحمول** خط الإنتاج الكامل تسلسلياً في محادثة واحدة — المراحل نفسها، والمخرجات نفسها، وبوابات الجودة نفسها.
 
@@ -133,25 +133,25 @@ grok plugin install indranilbanerjee/contentforge
 
 | المنصة | التثبيت |
 |---|---|
-| **Claude Code** (سطر الأوامر + بيئة التطوير) | `/plugin install contentforge@neels-plugins` |
-| **Anthropic Cowork** | لوحة Plugins ← Add marketplace ← `indranilbanerjee/neels-plugins` |
-| **OpenAI Codex** | `codex plugin install contentforge@neels-plugins` |
-| **Cursor 2.5+** | `/add-plugin contentforge@https://github.com/indranilbanerjee/contentforge` |
-| **GitHub Copilot CLI** | `copilot plugin install contentforge@neels-plugins` |
-| **Google Antigravity 2.0** | `agy plugin install https://github.com/indranilbanerjee/contentforge` |
-| **Hermes Agent** | `hermes plugins install indranilbanerjee/contentforge` |
-| **OpenClaw** | `openclaw plugins install git:github.com/indranilbanerjee/contentforge` |
-| **Grok** (xAI Build CLI) | `grok plugin install indranilbanerjee/contentforge` |
-| **claude.ai** (الويب) | ارفع إحدى مهارات `.skill` البارزة من [الإصدارات](https://github.com/indranilbanerjee/contentforge/releases/latest) |
+| **Claude Code** (سطر الأوامر + بيئة التطوير) | `/plugin install contentforge@techshu` |
+| **Anthropic Cowork** | لوحة Plugins ← Add marketplace ← `teachskillofskills-ai/techshu-marketplace` |
+| **OpenAI Codex** | `codex plugin install contentforge@techshu` |
+| **Cursor 2.5+** | `/add-plugin contentforge@https://github.com/teachskillofskills-ai/ContentForge-techshu` |
+| **GitHub Copilot CLI** | `copilot plugin install contentforge@techshu` |
+| **Google Antigravity 2.0** | `agy plugin install https://github.com/teachskillofskills-ai/ContentForge-techshu` |
+| **Hermes Agent** | `hermes plugins install teachskillofskills-ai/ContentForge-techshu` |
+| **OpenClaw** | `openclaw plugins install git:github.com/teachskillofskills-ai/ContentForge-techshu` |
+| **Grok** (xAI Build CLI) | `grok plugin install teachskillofskills-ai/ContentForge-techshu` |
+| **claude.ai** (الويب) | ارفع إحدى مهارات `.skill` البارزة من [الإصدارات](https://github.com/teachskillofskills-ai/ContentForge-techshu/releases/latest) |
 | **ChatGPT / مضيفو Agent Plugins 1.0** | حزمة `plugin.json` في الجذر + مسار التنفيذ المحمول |
 
-جميع ملفات SKILL.md البالغ عددها 22 قابلة للنقل بين المنصات عبر معيار Agent Skills المفتوح — وجّه أي عميل متوافق إلى `https://github.com/indranilbanerjee/contentforge/tree/master/skills`.
+جميع ملفات SKILL.md البالغ عددها 22 قابلة للنقل بين المنصات عبر معيار Agent Skills المفتوح — وجّه أي عميل متوافق إلى `https://github.com/teachskillofskills-ai/ContentForge-techshu/tree/master/skills`.
 
 ---
 
 ## التحديث
 
-**Claude Code:** التحديث التلقائي معطَّل افتراضياً لأسواق الإضافات الخارجية. فعّله مرة واحدة: `/plugin` ← تبويب **Marketplaces** ← `neels-plugins` ← **Enable auto-update**. أو يدوياً: `/plugin marketplace update neels-plugins` ثم `/plugin uninstall` + `/plugin install contentforge@neels-plugins` + `/reload-plugins`.
+**Claude Code:** التحديث التلقائي معطَّل افتراضياً لأسواق الإضافات الخارجية. فعّله مرة واحدة: `/plugin` ← تبويب **Marketplaces** ← `techshu` ← **Enable auto-update**. أو يدوياً: `/plugin marketplace update techshu` ثم `/plugin uninstall` + `/plugin install contentforge@techshu` + `/reload-plugins`.
 
 **Cowork / claude.ai / Claude Desktop:** افتح لوحة Plugins في الواجهة ← أزل ContentForge ← أعد تثبيته من السوق (إعادة السحب تجلب أحدث إصدار).
 
@@ -173,8 +173,8 @@ grok plugin install indranilbanerjee/contentforge
 
 ## عن القائم على المشروع
 
-‏ContentForge من بناء وصيانة **[Indranil "Neel" Banerjee](https://indranil.in)** — بانٍ ومفكر منهجي بجذور في أمن المعلومات، ومسيرة ثانية تمتد عبر تسويق النمو، والعمليات الرقمية المؤسسية، والتحول بالذكاء الاصطناعي. وهو جزء من حزمة **Neelverse Marketing Suite** الثلاثية إلى جانب [Digital Marketing Pro](https://github.com/indranilbanerjee/digital-marketing-pro) و[SocialForge](https://github.com/indranilbanerjee/socialforge).
+‏ContentForge يتولّى بناءه وصيانته **Indus Net TechShu Digital Pvt. Ltd.** وهو جزء من حزمة **TechShu Marketing Suite** المكوّنة من ثلاثة ملحقات، إلى جانب [Digital Marketing Pro](https://github.com/teachskillofskills-ai/DigitalMarketingPro-techshu) و[SocialForge](https://github.com/teachskillofskills-ai/SocialForge-techshu).
 
-إذا كان ContentForge يوفّر وقت فريقك، فامنح [⭐ نجمة للمستودع](https://github.com/indranilbanerjee/contentforge/stargazers) وفكّر في [رعاية المشروع ❤](https://github.com/sponsors/indranilbanerjee) — فهذا ما يُبقي وتيرة الإصدارات مستدامة.
+أنشأه في الأصل Indranil Banerjee بموجب رخصة MIT؛ وتُصان نسخة TechShu بشكل منفصل.
 
-**الرخصة:** MIT · **الأمان:** [تنبيهات أمنية خاصة](https://github.com/indranilbanerjee/contentforge/security/advisories/new) · **المشكلات:** [GitHub Issues](https://github.com/indranilbanerjee/contentforge/issues)
+**الرخصة:** MIT · **الأمان:** [تنبيهات أمنية خاصة](https://github.com/teachskillofskills-ai/ContentForge-techshu/security/advisories/new) · **المشكلات:** [GitHub Issues](https://github.com/teachskillofskills-ai/ContentForge-techshu/issues)

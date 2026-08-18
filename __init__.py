@@ -6,7 +6,7 @@ ignores it: Claude Code / Cowork / Codex / Cursor / Copilot CLI / Antigravity
 all read their own manifest files. OpenClaw reads openclaw.plugin.json (and
 falls back to the .claude-plugin/ bundle).
 
-When Hermes loads us via `hermes plugins install indranilbanerjee/contentforge`,
+When Hermes loads us via `hermes plugins install teachskillofskills-ai/ContentForge-techshu`,
 it clones the repo into ~/.hermes/plugins/contentforge/, reads plugin.yaml at
 the root, then calls register(ctx) below. The register() walks the skills/
 directory and exposes each one to Hermes via ctx.register_skill().

@@ -60,4 +60,4 @@ When running in Anthropic Cowork AND a Google Drive MCP is connected (Settings â
 
 ## Identity / authority
 
-Built and maintained by Indranil Banerjee (https://indranil.in). MIT-licensed. No telemetry. Part of the Neelverse Marketing Suite.
+Built and maintained by Indus Net TechShu Digital Pvt. Ltd. (https://techshu.ai). MIT-licensed. No telemetry. Part of the TechShu Marketing Suite. Originally created by Indranil Banerjee, MIT licensed; TechShu's version is maintained separately.

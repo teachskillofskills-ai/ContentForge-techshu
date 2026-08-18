@@ -8,9 +8,9 @@
 
 각 주제에 대해 `/contentforge:create-content`를 실행하십시오. 10단계 파이프라인이 43가지 패턴의 휴머나이저, 팩트체커 서브에이전트, 3가지 범주의 내부 링크, EU AI Act 준수를 위한 C2PA 출처 증명을 갖춘, 즉시 게재 가능한 `.docx`를 편당 30–60분 만에 만들어 냅니다. 그리고 어떤 원샷 도구도 갖지 못한 것이 이어집니다: **라이프사이클 루프.** 게재된 모든 콘텐츠는 성과가 측정되고, 노후화 여부가 감사되며, 다음 캘린더와 다음 브리프에 다시 반영됩니다 — 지속되는 파일 계약을 통해서입니다. 시스템이 브랜드에 대해 학습한 내용은 학습이 이루어진 세션이 끝나도 살아남습니다.
 
-오픈소스 엔터프라이즈 콘텐츠 프로덕션 시스템 — **22개 스킬 · 13개 전문 에이전트 · 10개 품질 게이트 · 43가지 패턴의 AI 탐지 휴머나이저 · 실행이 스스로 완료를 선언하기 전에 모든 게이트를 재검증하는 런 오디터 · 표준 라이브러리만 사용하는 28개 Python 스크립트**. 제작자: [Indranil Banerjee](https://indranil.in) · [LinkedIn](https://www.linkedin.com/in/askneelnow/) · [X](https://x.com/askneelnow).
+오픈소스 엔터프라이즈 콘텐츠 프로덕션 시스템 — **22개 스킬 · 13개 전문 에이전트 · 10개 품질 게이트 · 43가지 패턴의 AI 탐지 휴머나이저 · 실행이 스스로 완료를 선언하기 전에 모든 게이트를 재검증하는 런 오디터 · 표준 라이브러리만 사용하는 28개 Python 스크립트**.
 
-**버전 4.1.2** · [체인지로그](CHANGELOG.md) · MIT 라이선스 · [이 프로젝트 후원하기 ❤](https://github.com/sponsors/indranilbanerjee)
+**버전 4.1.2** · [체인지로그](CHANGELOG.md) · MIT 라이선스
 
 ---
 
@@ -50,43 +50,43 @@
 **Claude Code (CLI 또는 VS Code/JetBrains 확장):**
 
 ```bash
-/plugin marketplace add indranilbanerjee/neels-plugins
-/plugin install contentforge@neels-plugins
+/plugin marketplace add teachskillofskills-ai/techshu-marketplace
+/plugin install contentforge@techshu
 ```
 
-**Anthropic Cowork:** UI에서 **Plugins** 패널 열기 → Add marketplace → `indranilbanerjee/neels-plugins` → ContentForge 설치. (`/plugin` 슬래시 명령은 Cowork에서 작동하지 않습니다 — UI 패널을 사용하십시오.) 그다음 `/contentforge:cf-cowork-setup`을 한 번 실행하여 팀 공유가 가능한 출력을 위해 Google Drive를 연결하십시오.
+**Anthropic Cowork:** UI에서 **Plugins** 패널 열기 → Add marketplace → `teachskillofskills-ai/techshu-marketplace` → ContentForge 설치. (`/plugin` 슬래시 명령은 Cowork에서 작동하지 않습니다 — UI 패널을 사용하십시오.) 그다음 `/contentforge:cf-cowork-setup`을 한 번 실행하여 팀 공유가 가능한 출력을 위해 Google Drive를 연결하십시오.
 
 **OpenAI Codex (CLI + IDE + 앱):**
 
 ```bash
-codex plugin marketplace add indranilbanerjee/neels-plugins
-codex plugin install contentforge@neels-plugins
+codex plugin marketplace add teachskillofskills-ai/techshu-marketplace
+codex plugin install contentforge@techshu
 ```
 
 **기타 플랫폼:**
 
 ```bash
 # Cursor 2.5+ (in any Cursor Agent chat):
-/add-plugin contentforge@https://github.com/indranilbanerjee/contentforge
+/add-plugin contentforge@https://github.com/teachskillofskills-ai/ContentForge-techshu
 
 # GitHub Copilot CLI:
-copilot plugin marketplace add indranilbanerjee/neels-plugins
-copilot plugin install contentforge@neels-plugins
+copilot plugin marketplace add teachskillofskills-ai/techshu-marketplace
+copilot plugin install contentforge@techshu
 
 # Google Antigravity 2.0:
-agy plugin install https://github.com/indranilbanerjee/contentforge
+agy plugin install https://github.com/teachskillofskills-ai/ContentForge-techshu
 
 # Hermes Agent (Nous Research):
-hermes plugins install indranilbanerjee/contentforge
+hermes plugins install teachskillofskills-ai/ContentForge-techshu
 
 # OpenClaw:
-openclaw plugins install git:github.com/indranilbanerjee/contentforge
+openclaw plugins install git:github.com/teachskillofskills-ai/ContentForge-techshu
 
 # Grok (xAI Build CLI):
-grok plugin install indranilbanerjee/contentforge
+grok plugin install teachskillofskills-ai/ContentForge-techshu
 ```
 
-**claude.ai (웹):** [최신 릴리스](https://github.com/indranilbanerjee/contentforge/releases/latest)에서 히어로 스킬 — `cf-brief.skill`, `cf-social-adapt.skill`, `cf-translate.skill`, `cf-video-script.skill`, `cf-aeo-check.skill` 중 하나 — 을 내려받은 뒤, claude.ai에서 **Settings → Capabilities** (*Code execution and file creation* 활성화) → **Customize → Skills → Upload skill** 순서로 업로드하십시오. 전체 파이프라인은 서브에이전트 디스패치가 필요하므로 위에 나열된 플랫폼에서 실행되며, 히어로 스킬은 단독으로 작동합니다.
+**claude.ai (웹):** [최신 릴리스](https://github.com/teachskillofskills-ai/ContentForge-techshu/releases/latest)에서 히어로 스킬 — `cf-brief.skill`, `cf-social-adapt.skill`, `cf-translate.skill`, `cf-video-script.skill`, `cf-aeo-check.skill` 중 하나 — 을 내려받은 뒤, claude.ai에서 **Settings → Capabilities** (*Code execution and file creation* 활성화) → **Customize → Skills → Upload skill** 순서로 업로드하십시오. 전체 파이프라인은 서브에이전트 디스패치가 필요하므로 위에 나열된 플랫폼에서 실행되며, 히어로 스킬은 단독으로 작동합니다.
 
 **ChatGPT 및 기타 Agent Plugins 1.0 호스트:** ContentForge는 OpenAI의 벤더 중립 표준인 Agent Plugins 1.0에 따라 루트 `plugin.json`을 제공합니다. 서브에이전트 디스패치가 없는 호스트에서는 **포터블 실행 레인**이 하나의 대화 안에서 전체 파이프라인을 순차 실행합니다 — 동일한 단계, 동일한 아티팩트, 동일한 품질 게이트 그대로입니다.
 
@@ -133,25 +133,25 @@ grok plugin install indranilbanerjee/contentforge
 
 | 플랫폼 | 설치 방법 |
 |---|---|
-| **Claude Code** (CLI + IDE) | `/plugin install contentforge@neels-plugins` |
-| **Anthropic Cowork** | Plugins 패널 → Add marketplace → `indranilbanerjee/neels-plugins` |
-| **OpenAI Codex** | `codex plugin install contentforge@neels-plugins` |
-| **Cursor 2.5+** | `/add-plugin contentforge@https://github.com/indranilbanerjee/contentforge` |
-| **GitHub Copilot CLI** | `copilot plugin install contentforge@neels-plugins` |
-| **Google Antigravity 2.0** | `agy plugin install https://github.com/indranilbanerjee/contentforge` |
-| **Hermes Agent** | `hermes plugins install indranilbanerjee/contentforge` |
-| **OpenClaw** | `openclaw plugins install git:github.com/indranilbanerjee/contentforge` |
-| **Grok** (xAI Build CLI) | `grok plugin install indranilbanerjee/contentforge` |
-| **claude.ai** (웹) | [릴리스](https://github.com/indranilbanerjee/contentforge/releases/latest)에서 히어로 `.skill` 업로드 |
+| **Claude Code** (CLI + IDE) | `/plugin install contentforge@techshu` |
+| **Anthropic Cowork** | Plugins 패널 → Add marketplace → `teachskillofskills-ai/techshu-marketplace` |
+| **OpenAI Codex** | `codex plugin install contentforge@techshu` |
+| **Cursor 2.5+** | `/add-plugin contentforge@https://github.com/teachskillofskills-ai/ContentForge-techshu` |
+| **GitHub Copilot CLI** | `copilot plugin install contentforge@techshu` |
+| **Google Antigravity 2.0** | `agy plugin install https://github.com/teachskillofskills-ai/ContentForge-techshu` |
+| **Hermes Agent** | `hermes plugins install teachskillofskills-ai/ContentForge-techshu` |
+| **OpenClaw** | `openclaw plugins install git:github.com/teachskillofskills-ai/ContentForge-techshu` |
+| **Grok** (xAI Build CLI) | `grok plugin install teachskillofskills-ai/ContentForge-techshu` |
+| **claude.ai** (웹) | [릴리스](https://github.com/teachskillofskills-ai/ContentForge-techshu/releases/latest)에서 히어로 `.skill` 업로드 |
 | **ChatGPT / Agent Plugins 1.0 호스트** | 루트 `plugin.json` 패키지 + 포터블 실행 레인 |
 
-22개의 SKILL.md 파일 전부가 Agent Skills 오픈 표준을 통해 플랫폼 간 이식이 가능합니다 — 호환되는 어떤 클라이언트든 `https://github.com/indranilbanerjee/contentforge/tree/master/skills`를 가리키게 하면 됩니다.
+22개의 SKILL.md 파일 전부가 Agent Skills 오픈 표준을 통해 플랫폼 간 이식이 가능합니다 — 호환되는 어떤 클라이언트든 `https://github.com/teachskillofskills-ai/ContentForge-techshu/tree/master/skills`를 가리키게 하면 됩니다.
 
 ---
 
 ## 업데이트
 
-**Claude Code:** 서드파티 마켓플레이스는 기본적으로 자동 업데이트가 꺼져 있습니다. 한 번만 켜 두십시오: `/plugin` → **Marketplaces** 탭 → `neels-plugins` → **Enable auto-update**. 또는 수동으로: `/plugin marketplace update neels-plugins` 실행 후 `/plugin uninstall` + `/plugin install contentforge@neels-plugins` + `/reload-plugins`.
+**Claude Code:** 서드파티 마켓플레이스는 기본적으로 자동 업데이트가 꺼져 있습니다. 한 번만 켜 두십시오: `/plugin` → **Marketplaces** 탭 → `techshu` → **Enable auto-update**. 또는 수동으로: `/plugin marketplace update techshu` 실행 후 `/plugin uninstall` + `/plugin install contentforge@techshu` + `/reload-plugins`.
 
 **Cowork / claude.ai / Claude Desktop:** Plugins UI 패널 열기 → ContentForge 제거 → 마켓플레이스에서 재설치(다시 받아오면서 최신 버전이 설치됩니다).
 
@@ -173,8 +173,8 @@ grok plugin install indranilbanerjee/contentforge
 
 ## 메인테이너 소개
 
-ContentForge는 **[Indranil "Neel" Banerjee](https://indranil.in)** 가 만들고 유지 관리합니다 — 정보 보안에 뿌리를 두고 그로스 마케팅, 엔터프라이즈 디지털 운영, AI 트랜스포메이션으로 두 번째 여정을 이어 온 빌더이자 시스템 사상가입니다. [Digital Marketing Pro](https://github.com/indranilbanerjee/digital-marketing-pro), [SocialForge](https://github.com/indranilbanerjee/socialforge)와 함께 3개 플러그인으로 구성된 **Neelverse Marketing Suite**의 일부입니다.
+ContentForge는 **Indus Net TechShu Digital Pvt. Ltd.**가 개발하고 유지 관리합니다. [Digital Marketing Pro](https://github.com/teachskillofskills-ai/DigitalMarketingPro-techshu), [SocialForge](https://github.com/teachskillofskills-ai/SocialForge-techshu)와 함께 세 개의 플러그인으로 구성된 **TechShu Marketing Suite**의 일부입니다.
 
-ContentForge가 팀의 시간을 아껴 준다면 [⭐ 리포지토리에 스타](https://github.com/indranilbanerjee/contentforge/stargazers)를 눌러 주시고, [프로젝트 후원 ❤](https://github.com/sponsors/indranilbanerjee)도 고려해 주십시오 — 지속 가능한 릴리스 주기를 유지하는 데 힘이 됩니다.
+원저작자는 Indranil Banerjee이며 MIT 라이선스로 배포됩니다. TechShu 버전은 별도로 유지 관리됩니다.
 
-**라이선스:** MIT · **보안:** [비공개 보안 권고](https://github.com/indranilbanerjee/contentforge/security/advisories/new) · **이슈:** [GitHub Issues](https://github.com/indranilbanerjee/contentforge/issues)
+**라이선스:** MIT · **보안:** [비공개 보안 권고](https://github.com/teachskillofskills-ai/ContentForge-techshu/security/advisories/new) · **이슈:** [GitHub Issues](https://github.com/teachskillofskills-ai/ContentForge-techshu/issues)

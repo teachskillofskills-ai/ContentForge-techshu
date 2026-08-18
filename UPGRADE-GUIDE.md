@@ -16,7 +16,7 @@ Grok (xAI Build CLI) native manifests, and five hero skills packaged as
 claude.ai-uploadable `.skill` release assets. Existing installs, brands, runs,
 and stores are untouched. If you use claude.ai alongside your main install,
 grab the hero skills from the
-[latest release](https://github.com/indranilbanerjee/contentforge/releases/latest).
+[latest release](https://github.com/teachskillofskills-ai/ContentForge-techshu/releases/latest).
 
 ---
 
@@ -158,5 +158,5 @@ After upgrading, verify everything works:
 
 ## Questions?
 
-- [GitHub Issues](https://github.com/indranilbanerjee/contentforge/issues)
+- [GitHub Issues](https://github.com/teachskillofskills-ai/ContentForge-techshu/issues)
 - [CHANGELOG.md](CHANGELOG.md) for full details

@@ -80,18 +80,18 @@
 
 ### Method A: Claude Marketplace (Recommended)
 
-In Claude Cowork, go to Settings > Plugins > Marketplace and search for "ContentForge" from the `neels-plugins` marketplace.
+In Claude Cowork, go to Settings > Plugins > Marketplace and search for "ContentForge" from the `techshu` marketplace.
 
 Or, if using CLI:
 ```
-claude plugin marketplace add indranilbanerjee/neels-plugins
-claude plugin install contentforge@neels-plugins
+claude plugin marketplace add teachskillofskills-ai/techshu-marketplace
+claude plugin install contentforge@techshu
 ```
 
 ### Method B: Manual Install
 
 ```bash
-git clone https://github.com/indranilbanerjee/contentforge.git
+git clone https://github.com/teachskillofskills-ai/ContentForge-techshu.git
 ```
 
 Move the cloned folder to your Claude plugins directory:

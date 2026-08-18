@@ -6,51 +6,44 @@
 
 Run `/contentforge:create-content` against each topic. The 10-phase pipeline produces a publication-ready `.docx` with a 43-pattern humanizer, a fact-checker subagent, three-category internal linking, and C2PA provenance for EU AI Act compliance — in 30–60 minutes per piece. Then the part no single-shot tool has: **the lifecycle loop.** Every published piece is measured (`cf-aeo-check`), audited for decay (`cf-audit`), and fed back into the next calendar and the next brief — through durable file contracts, so what the system learns about your brand survives the session that learned it.
 
-Open-source enterprise content production system — **22 skills · 13 specialist agents · 10 quality gates · 43-pattern AI-detection humanizer · a run auditor that re-derives every gate before a run may call itself finished · 28 Python scripts, stdlib-only**. Built for marketing teams producing high volumes of long-form content that needs brand voice consistency, citation integrity, and an internal-link strategy that turns content into a funnel. Installs on **Claude Code** (CLI + IDE), **Anthropic Cowork**, **OpenAI Codex**, **Cursor 2.5+**, **GitHub Copilot CLI**, **Google Antigravity 2.0**, **Hermes Agent**, **OpenClaw**, and **Grok** (xAI Build CLI) + 35+ Agent Skills platforms — with hero skills uploadable to **claude.ai (web)** as `.skill` release assets. Created by [Indranil Banerjee](https://indranil.in) · [LinkedIn](https://www.linkedin.com/in/askneelnow/) · [X](https://x.com/askneelnow).
+Open-source enterprise content production system — **22 skills · 13 specialist agents · 10 quality gates · 43-pattern AI-detection humanizer · a run auditor that re-derives every gate before a run may call itself finished · 28 Python scripts, stdlib-only**. Built for marketing teams producing high volumes of long-form content that needs brand voice consistency, citation integrity, and an internal-link strategy that turns content into a funnel. Installs on **Claude Code** (CLI + IDE), **Anthropic Cowork**, **OpenAI Codex**, **Cursor 2.5+**, **GitHub Copilot CLI**, **Google Antigravity 2.0**, **Hermes Agent**, **OpenClaw**, and **Grok** (xAI Build CLI) + 35+ Agent Skills platforms — with hero skills uploadable to **claude.ai (web)** as `.skill` release assets.
 
 [![Version](https://img.shields.io/badge/version-4.1.2-blue.svg)](CHANGELOG.md)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/indranilbanerjee/contentforge?style=flat&logo=github&color=yellow)](https://github.com/indranilbanerjee/contentforge/stargazers)
-[![Forks](https://img.shields.io/github/forks/indranilbanerjee/contentforge?style=flat&logo=github&color=blue)](https://github.com/indranilbanerjee/contentforge/network/members)
-[![Issues](https://img.shields.io/github/issues/indranilbanerjee/contentforge?logo=github)](https://github.com/indranilbanerjee/contentforge/issues)
-[![Last commit](https://img.shields.io/github/last-commit/indranilbanerjee/contentforge?logo=github)](https://github.com/indranilbanerjee/contentforge/commits/master)
 [![Tests](https://img.shields.io/badge/tests-522%2F522%20passing-brightgreen.svg)](tests/)
 [![Platforms](https://img.shields.io/badge/platforms-9%20native%20%2B%2035%20Agent%20Skills-success.svg)](#supported-surfaces-v412)
 [![Cowork](https://img.shields.io/badge/cowork-compatible-purple.svg)](#cross-platform-compatibility)
 [![EU AI Act](https://img.shields.io/badge/EU%20AI%20Act-Article%2050%20ready-darkred.svg)](docs/c2pa-production-cert.md)
-[![Sponsor](https://img.shields.io/badge/sponsor-%E2%9D%A4-ea4aaa?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/indranilbanerjee)
 
-[![Built by Indranil "Neel" Banerjee — Neelverse Marketing Suite — Sponsor this project](docs/assets/author-banner.svg)](https://github.com/sponsors/indranilbanerjee)
-
-> 🆕 **Just shipped — v4.1.2 (August 17, 2026): schema-clean hooks manifest.** Cowork's plugin validation rejects unknown top-level fields in `hooks.json`, and ours carried a `_readme` rationale field ([digital-marketing-pro#9](https://github.com/indranilbanerjee/digital-marketing-pro/issues/9) — the same defect shipped in all three suite plugins). The rationale now lives in [hooks/README.md](hooks/README.md), `hooks.json` is exactly `{"hooks": {}}`, and a new guard keeps it that way. Translations re-stamped. Previously —
+> 🆕 **Just shipped — v4.1.2 (August 17, 2026): schema-clean hooks manifest.** Cowork's plugin validation rejects unknown top-level fields in `hooks.json`, and ours carried a `_readme` rationale field ([digital-marketing-pro#9](https://github.com/teachskillofskills-ai/DigitalMarketingPro-techshu/issues/9) — the same defect shipped in all three suite plugins). The rationale now lives in [hooks/README.md](hooks/README.md), `hooks.json` is exactly `{"hooks": {}}`, and a new guard keeps it that way. Translations re-stamped. Previously —
 >
 > **v4.1.1 (August 17, 2026): the README goes global, and shows its receipts.** This README now reads in **12 languages** (हिन्दी, 中文, 日本語, 한국어, Español, Português, العربية, اردو, தமிழ், বাংলা, Русский — switcher at the top, every translation version-stamped and guard-checked), carries **the real artifacts from a real validated run** — the actual chart the pipeline rendered, the actual humanizer before/after edits, the actual 9.0/A scorecard and CLEAN audit verdict ([see them](#the-artifacts-themselves--real-output-you-can-inspect)) — and documents **running ContentForge on OpenAI surfaces** (Codex CLI/IDE/App and ChatGPT via Agent Plugins 1.0) with the same depth as the Claude surfaces, including [updating on all nine platforms](#updating). Previously —
 >
-> **v4.1.0 (August 17, 2026): two new surfaces.** ContentForge now installs natively on **Grok (xAI Build CLI)** — `grok plugin install indranilbanerjee/contentforge` — via a first-class `.grok-plugin/` manifest pair, version-locked to every other manifest by the release-consistency suite. And five **hero skills now ship as claude.ai-uploadable `.skill` release assets** (`cf-brief`, `cf-social-adapt`, `cf-translate`, `cf-video-script`, `cf-aeo-check`), built by a deterministic packager (`scripts/build-skill-assets.py`) that bundles each skill's config/template dependencies and *refuses to package* any skill whose prose references a file that wouldn't exist after upload — so a claude.ai user never downloads a skill with broken references. [Install for your platform →](#supported-surfaces-v412)
+> **v4.1.0 (August 17, 2026): two new surfaces.** ContentForge now installs natively on **Grok (xAI Build CLI)** — `grok plugin install teachskillofskills-ai/ContentForge-techshu` — via a first-class `.grok-plugin/` manifest pair, version-locked to every other manifest by the release-consistency suite. And five **hero skills now ship as claude.ai-uploadable `.skill` release assets** (`cf-brief`, `cf-social-adapt`, `cf-translate`, `cf-video-script`, `cf-aeo-check`), built by a deterministic packager (`scripts/build-skill-assets.py`) that bundles each skill's config/template dependencies and *refuses to package* any skill whose prose references a file that wouldn't exist after upload — so a claude.ai user never downloads a skill with broken references. [Install for your platform →](#supported-surfaces-v412)
 >
 > **v4.0.0 (August 17, 2026): the lifecycle release.** ContentForge 3.x was a production pipeline; 4.0 makes it a content **system**. Three architectural changes, each grounded in a defect a real run exposed: **(1) The lifecycle loop closed.** `cf-audit` findings now land in a validated, canonical per-brand store (`scripts/audit-ledger.py`) that `cf-calendar` and `content-refresh` read across sessions; AI-visibility history (`aeo/checks.json`) feeds the freshness model; and each run's verified link inventory merges back into `brand_pages` automatically — conversion pages only ever *staged* for your confirmation, because a CTA is a commercial decision the system must not make for you. Before 4.0 every one of those handoffs was conversational, and worked only while one session held both ends. **(2) The pipeline contract is data.** `config/pipeline-graph.json` declares every phase's reads, writes, gates, and budgeted loop edges — drift-guarded both directions against the agent contracts, the checkpoint manager, and the run auditor. Encoding it immediately found six under-declared inputs the prose table had lost. **(3) The pipeline learns, with floors.** New `scripts/telemetry.py` aggregates loop history, phase timings, and the humanizer's per-pattern hit counts across runs — recurring patterns reach the next drafter brief as advisories behind a recurrence floor, and never touch a gate, a threshold, or a verdict. 22 skills · 27 scripts · 498 tests. [Release notes →](#release-notes) · [Full changelog →](CHANGELOG.md)
 
 ```bash
 # Install in Claude Code (CLI or VS Code/JetBrains extension):
-/plugin marketplace add indranilbanerjee/neels-plugins
-/plugin install contentforge@neels-plugins
+/plugin marketplace add teachskillofskills-ai/techshu-marketplace
+/plugin install contentforge@techshu
 
 # Install in Cowork: use the Plugins panel in the UI -- /plugin slash
 # commands DON'T work in Cowork (or Claude.ai / Claude Desktop).
-# Open Plugins panel -> Add marketplace -> paste indranilbanerjee/neels-plugins
+# Open Plugins panel -> Add marketplace -> paste teachskillofskills-ai/techshu-marketplace
 # -> Install ContentForge from the listed plugins.
 
 # Install on Hermes Agent (Nous Research):
-hermes plugins install indranilbanerjee/contentforge
+hermes plugins install teachskillofskills-ai/ContentForge-techshu
 
 # Install on OpenClaw:
-openclaw plugins install git:github.com/indranilbanerjee/contentforge
+openclaw plugins install git:github.com/teachskillofskills-ai/ContentForge-techshu
 
 # Install on Grok (xAI Build CLI):
-grok plugin install indranilbanerjee/contentforge
+grok plugin install teachskillofskills-ai/ContentForge-techshu
 ```
 
-> If ContentForge saves your team time, [give it a star ⭐](https://github.com/indranilbanerjee/contentforge/stargazers) — it's the single thing that helps other marketing teams find it.
+> If ContentForge saves your team time, [give it a star ⭐](https://github.com/teachskillofskills-ai/ContentForge-techshu/stargazers) — it's the single thing that helps other marketing teams find it.
 
 ---
 
@@ -75,21 +68,21 @@ Most AI writing tools produce one draft, in one tone, with no quality gates, and
 
 | Platform | Install command | Manifest path | Status |
 |---|---|---|---|
-| **Claude Code** CLI + IDE extension | `/plugin install contentforge@neels-plugins` | `.claude-plugin/plugin.json` | Full support (canonical for solo devs) |
-| **Anthropic Cowork** | Plugins panel in UI → Add marketplace → `indranilbanerjee/neels-plugins` → Install ContentForge | same `.claude-plugin/` files | **Recommended for teams** — `/contentforge:cf-cowork-setup` wires Google Drive for team-shareable output (and, in 4.0, for the lifecycle stores that make the loop compound across sessions) |
-| **OpenAI Codex** CLI + IDE + App | `codex plugin marketplace add indranilbanerjee/neels-plugins` then `codex plugin install contentforge@neels-plugins` | `.codex-plugin/plugin.json` (published OpenAI schema) | Full skills + MCP support |
-| **Cursor 2.5+** | In any Cursor Agent chat: `/add-plugin contentforge@https://github.com/indranilbanerjee/contentforge` | `.cursor-plugin/plugin.json` (verified Cursor 2.5+ JSON Schema) | Full skills + agents + commands support |
-| **GitHub Copilot CLI** | `copilot plugin marketplace add indranilbanerjee/neels-plugins` then `copilot plugin install contentforge@neels-plugins` | `.github/plugin/plugin.json` (Copilot also recognizes `.claude-plugin/plugin.json` as fallback) | Full skills + MCP support |
-| **Google Antigravity 2.0** CLI + IDE | `agy plugin install https://github.com/indranilbanerjee/contentforge` | `gemini-extension.json` (at repo root, per Google's reference pattern) | Full skills + hooks support |
-| **Hermes Agent** (Nous Research) — Desktop + CLI on macOS / Windows / Linux | `hermes plugins install indranilbanerjee/contentforge` | `plugin.yaml` + `__init__.py` at repo root (Hermes native spec) | Native plugin — adapter walks `skills/` at register time and exposes all 22 skills via `ctx.register_skill()`. Targets Hermes Desktop v0.15.2+ (public preview June 2 2026). |
-| **OpenClaw** (formerly Clawdbot / Moltbot) | `openclaw plugins install git:github.com/indranilbanerjee/contentforge` | `openclaw.plugin.json` at repo root (also auto-detects `.claude-plugin/plugin.json` as Claude-compatible bundle) | Native plugin via `openclaw.plugin.json`; `skills` field points at `./skills`. |
-| **Grok** (xAI Build CLI) | `grok plugin install indranilbanerjee/contentforge` — or add the marketplace: `grok plugin marketplace add indranilbanerjee/neels-plugins` then `grok plugin install contentforge` (append `--trust` to skip the install confirmation) | `.grok-plugin/plugin.json` + `.grok-plugin/marketplace.json` ([Grok Build](https://docs.x.ai/build/features/skills-plugins-marketplaces) also reads the `.claude-plugin/` manifests for compatibility; the native pair is the first-class lane) | Full skills support; the pipeline runs via the portable execution lane |
-| **claude.ai (web)** | Download a hero skill from [the latest release](https://github.com/indranilbanerjee/contentforge/releases/latest) (e.g. [`cf-brief.skill`](https://github.com/indranilbanerjee/contentforge/releases/latest/download/cf-brief.skill)) → claude.ai → **Settings → Capabilities** (enable *Code execution and file creation*) → **Customize → Skills → Upload skill** | built from `config/skill-assets.json` by `scripts/build-skill-assets.py` | **Hero skills only** — `cf-brief`, `cf-social-adapt`, `cf-translate`, `cf-video-script`, `cf-aeo-check`. The full pipeline needs subagent dispatch, which claude.ai uploads don't have |
+| **Claude Code** CLI + IDE extension | `/plugin install contentforge@techshu` | `.claude-plugin/plugin.json` | Full support (canonical for solo devs) |
+| **Anthropic Cowork** | Plugins panel in UI → Add marketplace → `teachskillofskills-ai/techshu-marketplace` → Install ContentForge | same `.claude-plugin/` files | **Recommended for teams** — `/contentforge:cf-cowork-setup` wires Google Drive for team-shareable output (and, in 4.0, for the lifecycle stores that make the loop compound across sessions) |
+| **OpenAI Codex** CLI + IDE + App | `codex plugin marketplace add teachskillofskills-ai/techshu-marketplace` then `codex plugin install contentforge@techshu` | `.codex-plugin/plugin.json` (published OpenAI schema) | Full skills + MCP support |
+| **Cursor 2.5+** | In any Cursor Agent chat: `/add-plugin contentforge@https://github.com/teachskillofskills-ai/ContentForge-techshu` | `.cursor-plugin/plugin.json` (verified Cursor 2.5+ JSON Schema) | Full skills + agents + commands support |
+| **GitHub Copilot CLI** | `copilot plugin marketplace add teachskillofskills-ai/techshu-marketplace` then `copilot plugin install contentforge@techshu` | `.github/plugin/plugin.json` (Copilot also recognizes `.claude-plugin/plugin.json` as fallback) | Full skills + MCP support |
+| **Google Antigravity 2.0** CLI + IDE | `agy plugin install https://github.com/teachskillofskills-ai/ContentForge-techshu` | `gemini-extension.json` (at repo root, per Google's reference pattern) | Full skills + hooks support |
+| **Hermes Agent** (Nous Research) — Desktop + CLI on macOS / Windows / Linux | `hermes plugins install teachskillofskills-ai/ContentForge-techshu` | `plugin.yaml` + `__init__.py` at repo root (Hermes native spec) | Native plugin — adapter walks `skills/` at register time and exposes all 22 skills via `ctx.register_skill()`. Targets Hermes Desktop v0.15.2+ (public preview June 2 2026). |
+| **OpenClaw** (formerly Clawdbot / Moltbot) | `openclaw plugins install git:github.com/teachskillofskills-ai/ContentForge-techshu` | `openclaw.plugin.json` at repo root (also auto-detects `.claude-plugin/plugin.json` as Claude-compatible bundle) | Native plugin via `openclaw.plugin.json`; `skills` field points at `./skills`. |
+| **Grok** (xAI Build CLI) | `grok plugin install teachskillofskills-ai/ContentForge-techshu` — or add the marketplace: `grok plugin marketplace add teachskillofskills-ai/techshu-marketplace` then `grok plugin install contentforge` (append `--trust` to skip the install confirmation) | `.grok-plugin/plugin.json` + `.grok-plugin/marketplace.json` ([Grok Build](https://docs.x.ai/build/features/skills-plugins-marketplaces) also reads the `.claude-plugin/` manifests for compatibility; the native pair is the first-class lane) | Full skills support; the pipeline runs via the portable execution lane |
+| **claude.ai (web)** | Download a hero skill from [the latest release](https://github.com/teachskillofskills-ai/ContentForge-techshu/releases/latest) (e.g. [`cf-brief.skill`](https://github.com/teachskillofskills-ai/ContentForge-techshu/releases/latest/download/cf-brief.skill)) → claude.ai → **Settings → Capabilities** (enable *Code execution and file creation*) → **Customize → Skills → Upload skill** | built from `config/skill-assets.json` by `scripts/build-skill-assets.py` | **Hero skills only** — `cf-brief`, `cf-social-adapt`, `cf-translate`, `cf-video-script`, `cf-aeo-check`. The full pipeline needs subagent dispatch, which claude.ai uploads don't have |
 | **Agent Plugins 1.0 hosts** (ChatGPT, Kiro, VS Code, and other adopters of OpenAI's vendor-neutral standard) | via the root `plugin.json` (closed AP1.0 schema) | `plugin.json` at repo root | Skills-only package; `${PLUGIN_ROOT}` / `${PLUGIN_DATA}` accepted everywhere; the **portable execution lane** runs the full pipeline on hosts without subagent dispatch |
 
 **Why this works:** Agent Skills became an open standard in December 2025 (41+ agent products by June 2026). All 22 SKILL.md files in ContentForge are platform-portable as written. The sibling manifests are thin platform-specific wrappers around the same `skills/` directory — no skill duplication.
 
-**Works on 35+ additional Agent Skills platforms** without per-platform manifests — Goose (Block), OpenHands, OpenCode (sst), Junie (JetBrains), Gemini CLI, Roo Code, Cline/Windsurf, Kiro, Amp, Letta, Mux, Factory, Workshop, Tabnine, Mistral Vibe, and more. Point any Agent-Skills-compatible client at `https://github.com/indranilbanerjee/contentforge/tree/master/skills` and all 22 ContentForge skills are immediately discoverable.
+**Works on 35+ additional Agent Skills platforms** without per-platform manifests — Goose (Block), OpenHands, OpenCode (sst), Junie (JetBrains), Gemini CLI, Roo Code, Cline/Windsurf, Kiro, Amp, Letta, Mux, Factory, Workshop, Tabnine, Mistral Vibe, and more. Point any Agent-Skills-compatible client at `https://github.com/teachskillofskills-ai/ContentForge-techshu/tree/master/skills` and all 22 ContentForge skills are immediately discoverable.
 
 ---
 
@@ -100,14 +93,14 @@ Most AI writing tools produce one draft, in one tone, with no quality gates, and
 **In Claude Code (CLI or VS Code/JetBrains extension):**
 
 ```bash
-/plugin marketplace add indranilbanerjee/neels-plugins
-/plugin install contentforge@neels-plugins
+/plugin marketplace add teachskillofskills-ai/techshu-marketplace
+/plugin install contentforge@techshu
 ```
 
 **In Anthropic Cowork:**
 
 1. Open the **Plugins** panel in the Cowork UI (sidebar / settings)
-2. Click **Add marketplace**, paste `indranilbanerjee/neels-plugins`
+2. Click **Add marketplace**, paste `teachskillofskills-ai/techshu-marketplace`
 3. After the marketplace syncs, find **ContentForge** in the listed plugins and click **Install**
 4. Then run `/contentforge:cf-cowork-setup` once to wire Google Drive as your team's output destination
 
@@ -117,7 +110,7 @@ Most AI writing tools produce one draft, in one tone, with no quality gates, and
 
 **Third-party marketplaces — including this one — have auto-update OFF by default in Claude Code.** When a newer version is on the marketplace and you're still running an older one, nothing tells you. There's no banner, no badge, no notification. So the first thing to do after install is enable updates:
 
-Open `/plugin`, go to the **Marketplaces** tab, find `neels-plugins`, and toggle **Enable auto-update**. Done — Claude Code will refresh and pull new ContentForge releases at startup from now on, prompting you to run `/reload-plugins` to pick up changes mid-session (no full restart, conversation context preserved).
+Open `/plugin`, go to the **Marketplaces** tab, find `techshu`, and toggle **Enable auto-update**. Done — Claude Code will refresh and pull new ContentForge releases at startup from now on, prompting you to run `/reload-plugins` to pick up changes mid-session (no full restart, conversation context preserved).
 
 If you'd rather update manually each time instead, see the [Updating](#updating) section below.
 
@@ -556,7 +549,7 @@ Run `/contentforge:cf-integrations` to check status. Run `/contentforge:cf-conne
 
 ### Manifest install error: "repository field is an object" or "$schema unknown"
 
-Fixed in v3.9.2. Update: `claude plugin marketplace update neels-plugins && claude plugin update contentforge@neels-plugins`.
+Fixed in v3.9.2. Update: `claude plugin marketplace update techshu && claude plugin update contentforge@techshu`.
 
 ### `/cf:` shortcut commands no longer work
 
@@ -570,7 +563,7 @@ As of v3.9.3 the canonical namespace is `/contentforge:`. The `/cf:` prefix was 
 >
 > The plugin IS installed (your `/contentforge:*` skills still work in chat); only the management command is unavailable. Fix:
 >
-> 1. **In Cowork** — open the **Plugins** panel (sidebar / Settings → Plugins). Find ContentForge → look for Update / Refresh. If there's no Update option, **Remove** the plugin, then re-install it from the `neels-plugins` marketplace — the re-pull fetches the latest version. If the marketplace itself is stale, also Remove + re-add the marketplace.
+> 1. **In Cowork** — open the **Plugins** panel (sidebar / Settings → Plugins). Find ContentForge → look for Update / Refresh. If there's no Update option, **Remove** the plugin, then re-install it from the `techshu` marketplace — the re-pull fetches the latest version. If the marketplace itself is stale, also Remove + re-add the marketplace.
 > 2. **In Claude.ai web or Claude Desktop** — same UI flow as Cowork: open the chat's Plugins UI button at the bottom → **Manage plugins** → Remove + Add to re-pull.
 > 3. **For slash-command management** — switch to **Claude Code (CLI or IDE extension)**. The plugin runs identically across every Anthropic surface; you're choosing where to type management commands.
 >
@@ -582,14 +575,14 @@ You have two options:
 
 ### Option 1 (recommended) — turn auto-update on for our marketplace once
 
-Run `/plugin`, go to the **Marketplaces** tab, find `neels-plugins`, and toggle **Enable auto-update**. From then on, Claude Code refreshes the catalog at startup and pulls the latest ContentForge automatically. After an auto-update fires you'll be prompted to run `/reload-plugins` to pick up the changes mid-session.
+Run `/plugin`, go to the **Marketplaces** tab, find `techshu`, and toggle **Enable auto-update**. From then on, Claude Code refreshes the catalog at startup and pulls the latest ContentForge automatically. After an auto-update fires you'll be prompted to run `/reload-plugins` to pick up the changes mid-session.
 
 ### Option 2 — manual update each time
 
 ```
-/plugin marketplace update neels-plugins
-/plugin uninstall contentforge@neels-plugins
-/plugin install contentforge@neels-plugins
+/plugin marketplace update techshu
+/plugin uninstall contentforge@techshu
+/plugin install contentforge@techshu
 /reload-plugins
 ```
 
@@ -600,8 +593,8 @@ Run `/plugin`, go to the **Marketplaces** tab, find `neels-plugins`, and toggle 
 This happens during fast-iteration debugging. Clear the cached copy and reinstall:
 
 ```
-rm -rf ~/.claude/plugins/cache/neels-plugins
-/plugin install contentforge@neels-plugins
+rm -rf ~/.claude/plugins/cache/techshu
+/plugin install contentforge@techshu
 /reload-plugins
 ```
 
@@ -611,11 +604,11 @@ The sections above cover Claude Code because that's where update *management* ha
 
 | Surface | How to update |
 |---|---|
-| **Anthropic Cowork** | Plugins panel → ContentForge → **Update** (or Remove + re-install from `neels-plugins` — the re-pull fetches latest). If the marketplace itself is stale, Remove + re-add the marketplace too. |
+| **Anthropic Cowork** | Plugins panel → ContentForge → **Update** (or Remove + re-install from `techshu` — the re-pull fetches latest). If the marketplace itself is stale, Remove + re-add the marketplace too. |
 | **claude.ai web / Claude Desktop** (plugin) | Plugins UI button at the bottom of the chat → Manage plugins → Remove + Add to re-pull. |
-| **claude.ai web** (hero `.skill` uploads) | Re-download the skill from the [latest release](https://github.com/indranilbanerjee/contentforge/releases/latest) and re-upload — uploaded skills never self-update. |
+| **claude.ai web** (hero `.skill` uploads) | Re-download the skill from the [latest release](https://github.com/teachskillofskills-ai/ContentForge-techshu/releases/latest) and re-upload — uploaded skills never self-update. |
 | **OpenAI Codex** | `codex plugin update contentforge` |
-| **Cursor 2.5+** | Re-run `/add-plugin contentforge@https://github.com/indranilbanerjee/contentforge` — it re-pulls the repository. |
+| **Cursor 2.5+** | Re-run `/add-plugin contentforge@https://github.com/teachskillofskills-ai/ContentForge-techshu` — it re-pulls the repository. |
 | **GitHub Copilot CLI** | `copilot plugin update contentforge` |
 | **Google Antigravity 2.0** | `agy plugin update contentforge` |
 | **Hermes Agent** | `hermes plugins update contentforge` (then `hermes plugins list` to confirm the version) |
@@ -672,8 +665,8 @@ The Claude surfaces get most of this README's screen time because they're where 
 ### OpenAI Codex (CLI + IDE + App) — full pipeline, today
 
 ```bash
-codex plugin marketplace add indranilbanerjee/neels-plugins
-codex plugin install contentforge@neels-plugins
+codex plugin marketplace add teachskillofskills-ai/techshu-marketplace
+codex plugin install contentforge@techshu
 ```
 
 What happens after install, mechanically:
@@ -699,10 +692,10 @@ What that means in practice, stated honestly:
 
 Every remaining surface follows the same pattern — a native manifest wrapping the same `skills/` directory, the portable lane where subagent dispatch is missing:
 
-- **Cursor 2.5+**: `/add-plugin contentforge@https://github.com/indranilbanerjee/contentforge` — full skills + agents + commands.
-- **GitHub Copilot CLI**: `copilot plugin install contentforge@neels-plugins` — full skills + MCP; custom slash commands aren't supported by Copilot CLI yet (open issue), so invoke by natural language.
-- **Google Antigravity 2.0**: `agy plugin install https://github.com/indranilbanerjee/contentforge` — full skills + hooks; subagents spawn via the `/agent` CLI.
-- **Grok (xAI Build CLI)**: `grok plugin install indranilbanerjee/contentforge` — native `.grok-plugin/` pair; Grok also reads the Claude manifests for compatibility.
+- **Cursor 2.5+**: `/add-plugin contentforge@https://github.com/teachskillofskills-ai/ContentForge-techshu` — full skills + agents + commands.
+- **GitHub Copilot CLI**: `copilot plugin install contentforge@techshu` — full skills + MCP; custom slash commands aren't supported by Copilot CLI yet (open issue), so invoke by natural language.
+- **Google Antigravity 2.0**: `agy plugin install https://github.com/teachskillofskills-ai/ContentForge-techshu` — full skills + hooks; subagents spawn via the `/agent` CLI.
+- **Grok (xAI Build CLI)**: `grok plugin install teachskillofskills-ai/ContentForge-techshu` — native `.grok-plugin/` pair; Grok also reads the Claude manifests for compatibility.
 - **Hermes Agent / OpenClaw**: native adapters at repo root (`plugin.yaml` + `__init__.py`, `openclaw.plugin.json`) registering all 22 skills.
 
 Whatever the surface, the invariants hold: same skills, same scripts, same artifacts, same gates, same honesty rules. The platform changes how phases are *dispatched*, never what they must *prove*.
@@ -717,12 +710,12 @@ Whatever the surface, the invariants hold: same skills, same scripts, same artif
 | Anthropic Cowork (without Drive) | ⚠️ Single-session only | All ContentForge commands run, but generated files land in the Cowork Linux sandbox — visible during the session, **gone after** — and the lifecycle loop cannot compound. Connect Google Drive in Cowork Settings → Integrations (60 seconds) to upgrade. |
 | Claude Code CLI | ✅ Full local support | Reference environment for developers. Files land in `~/Documents/ContentForge/<brand>/...` on your host. Every feature tested here first. |
 | Claude Code IDE extension (VS Code / JetBrains) | ✅ Full local support | Same as CLI; uses host filesystem. |
-| Standard Claude chat (browser `claude.ai` OR installed Claude Desktop app) | ❌ `/plugin` slash commands not available | Plugins still install and run via the **Plugins** UI button at the bottom of the chat. Additionally (v4.1.0): five hero skills ship as [`.skill` release assets](https://github.com/indranilbanerjee/contentforge/releases/latest) you can upload directly — claude.ai → Settings → Capabilities (enable *Code execution and file creation*) → Customize → Skills → Upload skill. |
-| **OpenAI Codex** CLI + IDE + App | ✅ Full skills + MCP support | `codex plugin install contentforge@neels-plugins`. Same 22 skills, same scripts. On builds without subagent dispatch, the portable execution lane runs the full pipeline sequentially with every gate intact. |
-| **Cursor 2.5+** | ✅ Full skills + agents + commands | `/add-plugin contentforge@https://github.com/indranilbanerjee/contentforge` in any Cursor Agent chat. |
-| **GitHub Copilot CLI** | ✅ Full skills + MCP | `copilot plugin install contentforge@neels-plugins`. Custom slash commands not yet supported in Copilot CLI (open issue) — invoke skills by natural language. |
-| **Google Antigravity 2.0** CLI + IDE | ✅ Full skills + hooks | `agy plugin install https://github.com/indranilbanerjee/contentforge`. Subagents need `/agent` CLI spawning; slash commands fold into skills. |
-| **Grok** (xAI Build CLI) | ✅ Full skills | `grok plugin install indranilbanerjee/contentforge` (native `.grok-plugin/` pair; Grok also reads the Claude Code manifests for compatibility). Pipeline runs via the portable execution lane. |
+| Standard Claude chat (browser `claude.ai` OR installed Claude Desktop app) | ❌ `/plugin` slash commands not available | Plugins still install and run via the **Plugins** UI button at the bottom of the chat. Additionally (v4.1.0): five hero skills ship as [`.skill` release assets](https://github.com/teachskillofskills-ai/ContentForge-techshu/releases/latest) you can upload directly — claude.ai → Settings → Capabilities (enable *Code execution and file creation*) → Customize → Skills → Upload skill. |
+| **OpenAI Codex** CLI + IDE + App | ✅ Full skills + MCP support | `codex plugin install contentforge@techshu`. Same 22 skills, same scripts. On builds without subagent dispatch, the portable execution lane runs the full pipeline sequentially with every gate intact. |
+| **Cursor 2.5+** | ✅ Full skills + agents + commands | `/add-plugin contentforge@https://github.com/teachskillofskills-ai/ContentForge-techshu` in any Cursor Agent chat. |
+| **GitHub Copilot CLI** | ✅ Full skills + MCP | `copilot plugin install contentforge@techshu`. Custom slash commands not yet supported in Copilot CLI (open issue) — invoke skills by natural language. |
+| **Google Antigravity 2.0** CLI + IDE | ✅ Full skills + hooks | `agy plugin install https://github.com/teachskillofskills-ai/ContentForge-techshu`. Subagents need `/agent` CLI spawning; slash commands fold into skills. |
+| **Grok** (xAI Build CLI) | ✅ Full skills | `grok plugin install teachskillofskills-ai/ContentForge-techshu` (native `.grok-plugin/` pair; Grok also reads the Claude Code manifests for compatibility). Pipeline runs via the portable execution lane. |
 
 ### How to pick
 
@@ -736,59 +729,58 @@ Run `/contentforge:cf-environment` after install to see exactly what's available
 
 ## Star history
 
-[![Star History Chart](https://api.star-history.com/svg?repos=indranilbanerjee/contentforge&type=Date)](https://star-history.com/#indranilbanerjee/contentforge&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=teachskillofskills-ai/ContentForge-techshu&type=Date)](https://star-history.com/#teachskillofskills-ai/ContentForge-techshu&Date)
 
 ---
 
-## About the maintainer
+## About this plugin
 
-ContentForge is built and maintained by **[Indranil "Neel" Banerjee](https://indranil.in)** — a builder and systems thinker with roots in information security and a second act across growth marketing, enterprise digital operations, and AI transformation. This repository is one public implementation of a broader focus on trustworthy AI execution: preserve context, make evidence inspectable, and keep people at consequential decision points.
+ContentForge is built and maintained by the **TechShu AI team** at Indus Net TechShu Digital
+Pvt. Ltd. It is the editorial pipeline our delivery teams produce client content on, kept
+current against platform and regulatory change as part of that delivery.
 
-- 🌐 **Website:** [indranil.in](https://indranil.in)
-- 💼 **LinkedIn:** [linkedin.com/in/askneelnow](https://www.linkedin.com/in/askneelnow)
-- 🐦 **X / Twitter:** [@askneelnow](https://x.com/askneelnow)
-- 💻 **GitHub:** [@indranilbanerjee](https://github.com/indranilbanerjee)
-- 📦 **Other plugins:** [Digital Marketing Pro](https://github.com/indranilbanerjee/digital-marketing-pro) · [SocialForge](https://github.com/indranilbanerjee/socialforge)
-- 💬 **Discussions:** [GitHub Discussions](https://github.com/indranilbanerjee/contentforge/discussions)
-- 🐛 **Bug reports:** [GitHub Issues](https://github.com/indranilbanerjee/contentforge/issues)
-- 🔒 **Security:** [Private Security Advisory](https://github.com/indranilbanerjee/contentforge/security/advisories/new) (see [SECURITY.md](SECURITY.md))
+- 🌐 **Website:** [techshu.ai](https://techshu.ai)
+- 📦 **Companion plugins:** [Digital Marketing Pro](https://github.com/teachskillofskills-ai/DigitalMarketingPro-techshu) · [SocialForge](https://github.com/teachskillofskills-ai/SocialForge-techshu)
+- 💬 **Discussions:** [GitHub Discussions](https://github.com/teachskillofskills-ai/ContentForge-techshu/discussions)
+- 🐛 **Bug reports:** [GitHub Issues](https://github.com/teachskillofskills-ai/ContentForge-techshu/issues)
+- 🔒 **Security:** [Private Security Advisory](https://github.com/teachskillofskills-ai/ContentForge-techshu/security/advisories/new) (see [SECURITY.md](SECURITY.md))
 
-If ContentForge saves your team time, [⭐ star the repo](https://github.com/indranilbanerjee/contentforge/stargazers). Sharing it on **LinkedIn** or **X** helps people discover the work too.
+If ContentForge saves your team time, [⭐ star the repo](https://github.com/teachskillofskills-ai/ContentForge-techshu/stargazers). Sharing it on **LinkedIn** or **X** helps people discover the work too.
 
 ---
 
 ## Contributing
 
-PRs welcome — especially on the 43-pattern AI-detection catalog, industry-specific content templates, and platform-specific schema improvements. See [CONTRIBUTING.md](CONTRIBUTING.md) for the workflow, [`.github/PULL_REQUEST_TEMPLATE.md`](.github/PULL_REQUEST_TEMPLATE.md) for the PR checklist, and [TESTING-GUIDE.md](TESTING-GUIDE.md) for the per-phase test checklist. All contributors are expected to follow the [Code of Conduct](CODE_OF_CONDUCT.md). Security issues: use [Private Security Advisories](https://github.com/indranilbanerjee/contentforge/security/advisories/new) per [SECURITY.md](SECURITY.md) — do not file public issues for vulnerabilities.
+PRs welcome — especially on the 43-pattern AI-detection catalog, industry-specific content templates, and platform-specific schema improvements. See [CONTRIBUTING.md](CONTRIBUTING.md) for the workflow, [`.github/PULL_REQUEST_TEMPLATE.md`](.github/PULL_REQUEST_TEMPLATE.md) for the PR checklist, and [TESTING-GUIDE.md](TESTING-GUIDE.md) for the per-phase test checklist. All contributors are expected to follow the [Code of Conduct](CODE_OF_CONDUCT.md). Security issues: use [Private Security Advisories](https://github.com/teachskillofskills-ai/ContentForge-techshu/security/advisories/new) per [SECURITY.md](SECURITY.md) — do not file public issues for vulnerabilities.
 
 ---
 
-## Neelverse Marketing Suite
+## TechShu Marketing Suite
 
-ContentForge is part of a three-plugin suite by [Indranil Banerjee](https://indranil.in) that share the same brand profiles and marketplace. **Each plugin is fully standalone** — install any one by itself and every capability it documents works; the others simply add more tools:
+ContentForge is part of a three-plugin suite maintained by TechShu that shares the same brand profiles and marketplace. **Each plugin is fully standalone** — install any one by itself and every capability it documents works; the others simply add more tools:
 
 | Plugin | What it does |
 |---|---|
-| [Digital Marketing Pro](https://github.com/indranilbanerjee/digital-marketing-pro) | End-to-end engagement methodology — 12-Part Strategy Flow, Four Core Documents, 24 agents, 163 skills |
+| [Digital Marketing Pro](https://github.com/teachskillofskills-ai/DigitalMarketingPro-techshu) | End-to-end engagement methodology — 12-Part Strategy Flow, Four Core Documents, 24 agents, 163 skills |
 | **ContentForge** (this plugin) | Publication-ready content via 10-phase pipeline + lifecycle loop, fact-checker, 43-pattern AI-detection humanizer, `.docx` export with C2PA signing |
-| [SocialForge](https://github.com/indranilbanerjee/socialforge) | Social media calendar with asset-first compositing, AI image + video via your connected providers, delivery audit, C2PA signing |
+| [SocialForge](https://github.com/teachskillofskills-ai/SocialForge-techshu) | Social media calendar with asset-first compositing, AI image + video via your connected providers, delivery audit, C2PA signing |
 
 ```
-/plugin marketplace add indranilbanerjee/neels-plugins
-/plugin install digital-marketing-pro@neels-plugins
-/plugin install contentforge@neels-plugins
-/plugin install socialforge@neels-plugins
+/plugin marketplace add teachskillofskills-ai/techshu-marketplace
+/plugin install digital-marketing-pro@techshu
+/plugin install contentforge@techshu
+/plugin install socialforge@techshu
 ```
 
 ---
 
 ## Release notes
 
-**v4.1.2 (2026-08-17)** — **Schema-clean hooks manifest.** Cowork's plugin validation rejects unknown top-level fields in `hooks.json`; ours carried a `_readme` rationale field (reported as [digital-marketing-pro#9](https://github.com/indranilbanerjee/digital-marketing-pro/issues/9) — all three suite plugins shipped the same defect). Rationale moved to `hooks/README.md`, manifest reduced to exactly `{"hooks": {}}`, guarded by `TestHooksManifestSchemaClean`. Translations re-stamped. **Tests 520 → 522.**
+**v4.1.2 (2026-08-17)** — **Schema-clean hooks manifest.** Cowork's plugin validation rejects unknown top-level fields in `hooks.json`; ours carried a `_readme` rationale field (reported as [digital-marketing-pro#9](https://github.com/teachskillofskills-ai/DigitalMarketingPro-techshu/issues/9) — all three suite plugins shipped the same defect). Rationale moved to `hooks/README.md`, manifest reduced to exactly `{"hooks": {}}`, guarded by `TestHooksManifestSchemaClean`. Translations re-stamped. **Tests 520 → 522.**
 
 **v4.1.1 (2026-08-17)** — **The README goes global, and shows its receipts.** **(1) Twelve languages.** The README now ships in English plus 11 full translations (हिन्दी, 中文, 日本語, 한국어, Español, Português, العربية, اردو, தமிழ், বাংলা, Русский), each version-stamped ("Synced with English README v4.1.1") and guarded by a new `tests/test_readme_translations.py` — a translation that silently falls behind the shipping version fails the suite, the same discipline every other count and claim in this repo lives under. The English README is declared the source of truth in every file. **(2) Real artifacts in the Examples.** The validated August run's actual outputs are now embedded: the chart the pipeline rendered, the delivered opening prose, three verbatim before→after humanizer edits from the Phase 6.5 report, the run auditor's CLEAN verdict JSON, and a scorecard SVG whose every number is read from the run's own artifacts. **(3) OpenAI surfaces documented at full depth.** A new section walks through exactly how the pipeline runs on Codex (CLI/IDE/App) and what Agent Plugins 1.0 means for ChatGPT — mechanically, with the portable execution lane's guarantees stated and the directory-listing status stated honestly. The Updating section now covers all nine platforms plus claude.ai re-uploads, not just Claude Code. **(4)** Author banner + sponsor call-to-action at the top; the real-run chart and scorecard live in `docs/assets/`.
 
-**v4.1.0 (2026-08-17)** — **Two new surfaces.** **(1) Grok (xAI Build CLI) becomes the ninth native platform.** A first-class `.grok-plugin/` manifest pair (`plugin.json` + single-plugin `marketplace.json`) makes `grok plugin install indranilbanerjee/contentforge` work directly — Grok also reads the Claude Code manifests for compatibility, but the native pair is what an official xAI marketplace listing points at. Both files are version-locked into the release-consistency suite, so they can never drift from the other manifests silently. **(2) Hero skills ship as claude.ai `.skill` release assets.** `config/skill-assets.json` declares the five skills that are safe standalone on claude.ai (`cf-brief`, `cf-social-adapt`, `cf-translate`, `cf-video-script`, `cf-aeo-check`) plus each one's config/template dependencies; `scripts/build-skill-assets.py` packages them deterministically (byte-identical rebuilds) with those dependencies bundled at the same relative paths the prose references — and **refuses to build** any skill whose SKILL.md references `${CLAUDE_PLUGIN_ROOT}` or an undeclared repo file (plant-checked, both directions). The pipeline skill is guard-excluded: it needs subagent dispatch and must never masquerade as a standalone upload. **Tests 498 → 514.**
+**v4.1.0 (2026-08-17)** — **Two new surfaces.** **(1) Grok (xAI Build CLI) becomes the ninth native platform.** A first-class `.grok-plugin/` manifest pair (`plugin.json` + single-plugin `marketplace.json`) makes `grok plugin install teachskillofskills-ai/ContentForge-techshu` work directly — Grok also reads the Claude Code manifests for compatibility, but the native pair is what an official xAI marketplace listing points at. Both files are version-locked into the release-consistency suite, so they can never drift from the other manifests silently. **(2) Hero skills ship as claude.ai `.skill` release assets.** `config/skill-assets.json` declares the five skills that are safe standalone on claude.ai (`cf-brief`, `cf-social-adapt`, `cf-translate`, `cf-video-script`, `cf-aeo-check`) plus each one's config/template dependencies; `scripts/build-skill-assets.py` packages them deterministically (byte-identical rebuilds) with those dependencies bundled at the same relative paths the prose references — and **refuses to build** any skill whose SKILL.md references `${CLAUDE_PLUGIN_ROOT}` or an undeclared repo file (plant-checked, both directions). The pipeline skill is guard-excluded: it needs subagent dispatch and must never masquerade as a standalone upload. **Tests 498 → 514.**
 
 **v4.0.0 (2026-08-17)** — **The lifecycle release.** ContentForge 3.x produced excellent pieces and forgot them; 4.0 makes production, measurement, and planning one auditable system. **(1) The lifecycle loop closed by file contracts.** New `scripts/audit-ledger.py`: `/contentforge:audit-content` now RECORDS its findings (schema-validated — pieces with freshness scores, ranked refresh priorities, recommended scopes, gap topics, and a required `aeo_history_considered` field, because "not consulted" and "consulted" must never be the same answer) into `audits/` per brand; `cf-calendar --from-audit=latest` and `content-refresh` read the recorded candidates by file, across sessions — before this, the calendar's documented read of "the most recent cf-audit output" resolved to nothing once the session ended. `cf-aeo-check`'s append-only history now feeds the freshness model (lost AI citations deduct, with the deduction named). And Phase 1's verified link inventory merges into `brand_pages` automatically after Gate 1 (`harvest-brand-pages.py --merge-inventory`): product/authority pages upsert with freshness stamps, manual curation never overwritten, **conversion pages only staged for human confirmation** — a CTA is a commercial decision the system must not make. **(2) The pipeline contract as data.** `config/pipeline-graph.json` declares nodes, reads/writes, gates, and budgeted loop edges; `tests/test_pipeline_contract_graph.py` drift-guards it both directions against agent contracts, the orchestrator's table, `checkpoint-manager.py`, and `run-audit.py`. Encoding the table immediately surfaced six under-declared inputs (including Phase 8's real dependency on the SEO scorecard and humanization report, and Phase 5's on the annotated draft whose anchors must survive). **(3) Telemetry with floors.** New `scripts/telemetry.py` aggregates loop edges + reasons, phase timings, and the humanizer's new `phase-6.5-pattern-hits.json` across runs; `cf-analytics` renders loop-edge and pattern panels; recurring patterns reach the Phase 3 brief as advisories behind a ≥3-run recurrence floor. Pre-4.0 runs count as `not_instrumented` — unknown, never zero — and advisories never touch a gate, a threshold, or a verdict, by contract and by test. Design specs for the two follow-on stores (the living link graph and the per-brand claim library) are committed at `research/2026-08-17-link-graph-and-claim-library-spec.md` — deliberately specified before being built. **Tests 464 → 498.**
 
@@ -818,31 +810,21 @@ ContentForge is part of a three-plugin suite by [Indranil Banerjee](https://indr
 
 MIT — see [LICENSE](LICENSE).
 
-## Sponsor this project
-
-This plugin is MIT-licensed, free to use commercially, and collects no telemetry. What
-sponsorship pays for is the unglamorous half of keeping it accurate: platform-API updates
-when a vendor ships a breaking version, model-registry refreshes when a model is retired,
-compliance passes when regulatory guidance moves, and issue triage.
-
-If it saves your team time, you can [sponsor the work](https://github.com/sponsors/indranilbanerjee).
-Sponsors from $25/mo are listed in [SPONSORS.md](SPONSORS.md).
-
-[![Sponsor](https://img.shields.io/badge/sponsor%20on%20GitHub-%E2%9D%A4-ea4aaa?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/indranilbanerjee)
-
 ---
 
 ## Support
 
-- **Issues:** [GitHub Issues](https://github.com/indranilbanerjee/contentforge/issues)
-- **Discussions:** [GitHub Discussions](https://github.com/indranilbanerjee/contentforge/discussions)
+- **Issues:** [GitHub Issues](https://github.com/teachskillofskills-ai/ContentForge-techshu/issues)
+- **Discussions:** [GitHub Discussions](https://github.com/teachskillofskills-ai/ContentForge-techshu/discussions)
 
 ## Credits
 
-Created by [Indranil Banerjee](https://indranil.in). Built for Claude Code and Anthropic Cowork. Powered by Anthropic Claude.
+Maintained by Indus Net TechShu Digital Pvt. Ltd. Built for Claude Code and Anthropic Cowork. Powered by Anthropic Claude.
+
+Originally created by Indranil Banerjee, MIT licensed; TechShu's version is maintained separately.
 
 ---
 
-<sub>Made with care by [Indranil Banerjee](https://indranil.in) · MIT-licensed · [⭐ Star the repo](https://github.com/indranilbanerjee/contentforge) if it helps you</sub>
+<sub>Maintained by Indus Net TechShu Digital Pvt. Ltd. · MIT-licensed</sub>
 
 Humanizer 43-pattern catalog adapted from [Wikipedia: Signs of AI Writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) (CC BY-SA, WikiProject AI Cleanup) with structure influenced by [blader/humanizer](https://github.com/blader/humanizer) (MIT).

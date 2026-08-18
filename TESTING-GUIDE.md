@@ -35,8 +35,8 @@ Complete testing guide for the ContentForge enterprise content production plugin
 
 | Method | URL |
 |--------|-----|
-| **Marketplace** | `https://github.com/indranilbanerjee/neels-plugins.git` |
-| **Direct URL** | `https://github.com/indranilbanerjee/contentforge.git` |
+| **Marketplace** | `https://github.com/teachskillofskills-ai/techshu-marketplace.git` |
+| **Direct URL** | `https://github.com/teachskillofskills-ai/ContentForge-techshu.git` |
 
 ### Pre-Test Cleanup
 
@@ -66,7 +66,7 @@ rm -rf ~/.claude-marketing/
 
 **Steps:**
 1. In Claude Cowork, go to Settings > Plugins > Add Marketplace
-2. Enter URL: `https://github.com/indranilbanerjee/neels-plugins.git`
+2. Enter URL: `https://github.com/teachskillofskills-ai/techshu-marketplace.git`
 3. Install `contentforge`
 
 **Expected Results:**
@@ -86,7 +86,7 @@ rm -rf ~/.claude-marketing/
 
 **Steps:**
 1. Settings > Plugins > Add Plugin
-2. Enter URL: `https://github.com/indranilbanerjee/contentforge.git`
+2. Enter URL: `https://github.com/teachskillofskills-ai/ContentForge-techshu.git`
 
 **Expected:** Same results as marketplace installation
 

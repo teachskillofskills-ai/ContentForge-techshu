@@ -4,6 +4,11 @@ This is a hard product rule that was, until now, only ever enforced by hand —
 and a violation shipped for months in a sibling plugin's spec before the
 2026-07-29 audit caught it. The forbidden strings are assembled at runtime from
 fragments so this test file itself keeps the repository grep-clean.
+
+Scope narrowed at the TechShu rebrand: this repository is now owned and
+maintained by Indus Net TechShu Digital Pvt. Ltd., which names itself in its
+own manifests, README and author fields, so the owning company is no longer a
+forbidden string here. The wider group brand remains guarded.
 """
 from __future__ import annotations
 
@@ -21,11 +26,9 @@ SKIP_SUFFIXES = {".png", ".jpg", ".jpeg", ".gif", ".ico", ".woff", ".woff2",
 def _needles() -> list[re.Pattern]:
     # Assembled from fragments on purpose — the plain strings must not exist
     # in the repository, including in this file.
-    org = "tech" + "shu"
     agency_host = "int" + "global"
     agency_name = r"\bint\.?\s+" + "global" + r"\b"
     return [
-        re.compile(org, re.I),
         re.compile(agency_host, re.I),
         re.compile(agency_name, re.I),
     ]

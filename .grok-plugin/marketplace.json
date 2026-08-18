@@ -1,21 +1,21 @@
 {
   "name": "contentforge",
   "owner": {
-    "name": "Indranil Banerjee",
-    "url": "https://github.com/indranilbanerjee"
+    "name": "Indus Net TechShu Digital Pvt. Ltd.",
+    "url": "https://github.com/teachskillofskills-ai"
   },
   "description": "Marketplace source for the ContentForge content lifecycle plugin",
   "plugins": [
     {
       "name": "contentforge",
-      "description": "Open-source content lifecycle system — 22 skills, 13 agents, 10-gate pipeline, 43-pattern AI humanizer, run auditor, real .docx output, and a measure-audit-plan loop that compounds per brand.",
+      "description": "Content lifecycle system for TechShu delivery teams - 22 skills, 13 agents, 10-gate pipeline, 43-pattern AI humanizer, run auditor, real .docx output, and a measure-audit-plan loop that compounds per brand.",
       "version": "4.1.2",
       "category": "marketing",
       "source": {
         "source": "url",
-        "url": "https://github.com/indranilbanerjee/contentforge.git"
+        "url": "https://github.com/teachskillofskills-ai/ContentForge-techshu.git"
       },
-      "homepage": "https://github.com/indranilbanerjee/contentforge",
+      "homepage": "https://github.com/teachskillofskills-ai/ContentForge-techshu",
       "keywords": [
         "content-marketing",
         "content-pipeline",

@@ -122,7 +122,7 @@ Probe data (raw):
 <dump indicators from JSON>
 
 Recommended: report this environment in a GitHub issue at
-https://github.com/indranilbanerjee/contentforge/issues so we can extend
+https://github.com/teachskillofskills-ai/ContentForge-techshu/issues so we can extend
 the environment detector to recognize it.
 ```
 

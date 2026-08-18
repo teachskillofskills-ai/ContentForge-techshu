@@ -2,7 +2,7 @@
 
 ## Our Pledge
 
-We — contributors and maintainers of ContentForge and the broader [Neelverse Marketing Suite](https://github.com/indranilbanerjee) — pledge to make participation in our project a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socioeconomic status, nationality, personal appearance, race, religion, or sexual identity and orientation.
+We — contributors and maintainers of ContentForge and the broader [TechShu Marketing Suite](https://github.com/teachskillofskills-ai) — pledge to make participation in our project a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socioeconomic status, nationality, personal appearance, race, religion, or sexual identity and orientation.
 
 We pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community.
 
@@ -28,11 +28,11 @@ Examples of unacceptable behavior:
 
 ## Scope
 
-This Code of Conduct applies within all community spaces (this repository, related repositories in the Neelverse Marketing Suite, Discussions, Issues, Pull Requests, social channels referencing the project), and also applies when an individual is officially representing the community in public spaces.
+This Code of Conduct applies within all community spaces (this repository, related repositories in the TechShu Marketing Suite, Discussions, Issues, Pull Requests, social channels referencing the project), and also applies when an individual is officially representing the community in public spaces.
 
 ## Enforcement
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the project maintainer at the email listed on [indranil.in](https://indranil.in) or via a private security advisory on this GitHub repository. All complaints will be reviewed and investigated promptly and fairly.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the project maintainer at the email listed on [techshu.ai](https://techshu.ai) or via a private security advisory on this GitHub repository. All complaints will be reviewed and investigated promptly and fairly.
 
 Maintainers are obligated to respect the privacy and security of the reporter of any incident.
 

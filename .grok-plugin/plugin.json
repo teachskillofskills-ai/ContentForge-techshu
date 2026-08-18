@@ -1,13 +1,13 @@
 {
   "name": "contentforge",
   "version": "4.1.2",
-  "description": "Open-source content lifecycle system — 22 skills, 13 agents, 10-gate pipeline, 43-pattern AI humanizer, run auditor, real .docx output, and a measure-audit-plan loop that compounds per brand.",
+  "description": "Content lifecycle system for TechShu delivery teams - 22 skills, 13 agents, 10-gate pipeline, 43-pattern AI humanizer, run auditor, real .docx output, and a measure-audit-plan loop that compounds per brand.",
   "author": {
-    "name": "Indranil Banerjee",
-    "url": "https://github.com/indranilbanerjee"
+    "name": "Indus Net TechShu Digital Pvt. Ltd.",
+    "url": "https://github.com/teachskillofskills-ai"
   },
-  "homepage": "https://github.com/indranilbanerjee/contentforge",
-  "repository": "https://github.com/indranilbanerjee/contentforge.git",
+  "homepage": "https://github.com/teachskillofskills-ai/ContentForge-techshu",
+  "repository": "https://github.com/teachskillofskills-ai/ContentForge-techshu.git",
   "license": "MIT",
   "keywords": [
     "content-marketing",
@@ -58,8 +58,7 @@
     "model-context-protocol",
     "marketing-automation",
     "marketing-plugin",
-    "ai-marketing",
-    "neelverse"
+    "ai-marketing"
   ],
   "skills": "./skills/"
 }

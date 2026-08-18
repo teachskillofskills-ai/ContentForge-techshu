@@ -79,7 +79,7 @@ class TestVersionConsistency(unittest.TestCase):
                          f".grok-plugin/marketplace.json v={entry['version']} "
                          f"!= canonical v={self.canonical}")
         self.assertEqual(entry["source"]["url"],
-                         "https://github.com/indranilbanerjee/contentforge.git",
+                         "https://github.com/teachskillofskills-ai/ContentForge-techshu.git",
                          "Grok marketplace source must point at this repo")
 
     def test_hermes_plugin_yaml_matches_canonical_version(self):
@@ -193,7 +193,7 @@ class TestInstallCommandCoverage(unittest.TestCase):
         cls.text = README.read_text(encoding="utf-8")
 
     def test_claude_code_install_command_present(self):
-        self.assertIn("/plugin install contentforge@neels-plugins", self.text)
+        self.assertIn("/plugin install contentforge@techshu", self.text)
 
     def test_codex_install_command_present(self):
         self.assertIn("codex plugin install contentforge", self.text)
@@ -208,22 +208,22 @@ class TestInstallCommandCoverage(unittest.TestCase):
         self.assertIn("agy plugin install", self.text)
 
     def test_hermes_install_command_present(self):
-        self.assertIn("hermes plugins install indranilbanerjee/contentforge", self.text)
+        self.assertIn("hermes plugins install teachskillofskills-ai/ContentForge-techshu", self.text)
 
     def test_openclaw_install_command_present(self):
         self.assertIn(
-            "openclaw plugins install git:github.com/indranilbanerjee/contentforge",
+            "openclaw plugins install git:github.com/teachskillofskills-ai/ContentForge-techshu",
             self.text,
         )
 
     def test_grok_install_command_present(self):
-        self.assertIn("grok plugin install indranilbanerjee/contentforge", self.text)
+        self.assertIn("grok plugin install teachskillofskills-ai/ContentForge-techshu", self.text)
 
     def test_claude_ai_skill_asset_download_present(self):
         # claude.ai (web) users install hero skills from release assets — the
         # README must link at least one .skill download and name the upload path.
         self.assertIn(
-            "https://github.com/indranilbanerjee/contentforge/releases/latest/download/",
+            "https://github.com/teachskillofskills-ai/ContentForge-techshu/releases/latest/download/",
             self.text,
         )
         self.assertIn(".skill", self.text)

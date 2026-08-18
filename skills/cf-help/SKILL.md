@@ -153,7 +153,7 @@ table below references the user-visible behaviors.
 |-------|-------------|
 | "Brand profile not found" | Run `/contentforge:brand-setup` to create the brand profile first |
 | Files don't appear in ~/Documents/ContentForge/ | Check Cowork sandbox warning above. In local Claude Code: `/contentforge:output-folder` shows the resolved path; verify `CONTENTFORGE_PUBLISH_DIR` env var if you've customized it |
-| Headers in .docx aren't semantic Heading 1/2/3 | Verified fixed in v3.12.4 -- if you see this, you're on an older version; run `/plugin update contentforge@neels-plugins` |
+| Headers in .docx aren't semantic Heading 1/2/3 | Verified fixed in v3.12.4 -- if you see this, you're on an older version; run `/plugin update contentforge@techshu` |
 | Pipeline interrupted, lost work | Use `/contentforge:resume` to pick up from the last completed phase (v3.12.3+) |
 | Google Drive connector ignored at brand-setup | Fixed in v3.12.7. Run `python scripts/detect-drive-mcp.py` to verify the autodetect can see your MCP |
 | Quality score below 5.0 | Content flagged for human review -- check topic complexity, source availability, and brand profile completeness |
