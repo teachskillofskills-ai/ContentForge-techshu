@@ -6,7 +6,7 @@
 > Plugins Directory) lives in `docs/distribution/submission-bundle.md`.
 
 **Plugin:** ContentForge
-**Version at submission:** 3.10.0
+**Version at submission:** 4.1.2
 **Submitter:** Indus Net TechShu Digital Pvt. Ltd.
 **Repository:** https://github.com/teachskillofskills-ai/ContentForge-techshu
 **Marketplace:** https://github.com/teachskillofskills-ai/techshu-marketplace

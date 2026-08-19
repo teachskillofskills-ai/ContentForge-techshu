@@ -16,9 +16,7 @@ ready to paste; items marked **[owner action]** need the account holder.
 
 - **Name:** contentforge · **Display name:** ContentForge
 - **Category:** Content / Writing / Marketing
-- **Short description:** Open-source content lifecycle system — 22 skills,
-  13 agents, a 10-gate pipeline, 43-pattern AI humanizer, run auditor, real
-  .docx output, and a measure-audit-plan loop that compounds per brand.
+- **Short description:** Enterprise content pipeline for TechShu delivery teams — 22 skills, 13 agents, a 43-pattern AI humanizer, verified fix ledger, run auditor, and real .docx output.
 - **Long description:** A 10-phase content pipeline where every quality claim
   is measured, not asserted: research → fact-check (verified claim ledger) →
   draft → visuals → hallucination validation → structure → SEO/GEO →

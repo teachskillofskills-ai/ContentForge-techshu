@@ -244,6 +244,10 @@ class TestFinalizeGate(RunFixture):
         self.assertEqual(r.get("status"), "blocked")
 
 
+_HAS_DEP = importlib.util.find_spec("matplotlib") is not None
+_DEP_MSG = "matplotlib not installed (feature_card.py renders with it)"
+
+
 class TestFeatureCard(unittest.TestCase):
     def run_card(self, tmp, **kw):
         args = {"--title": "A Reasonable Title for a Card",
@@ -261,6 +265,7 @@ class TestFeatureCard(unittest.TestCase):
             self.fail(f"non-JSON (exit {proc.returncode}): "
                       f"{proc.stdout[:200]} {proc.stderr[:200]}")
 
+    @unittest.skipUnless(_HAS_DEP, _DEP_MSG)
     def test_renders_exact_og_size(self):
         with tempfile.TemporaryDirectory() as tmp:
             code, out = self.run_card(tmp)
@@ -269,6 +274,7 @@ class TestFeatureCard(unittest.TestCase):
             self.assertGreater(out["bytes"], 5000)
             self.assertTrue(Path(out["file_path"]).is_file())
 
+    @unittest.skipUnless(_HAS_DEP, _DEP_MSG)
     def test_is_honest_about_what_it_is(self):
         with tempfile.TemporaryDirectory() as tmp:
             _, out = self.run_card(tmp)
@@ -288,6 +294,7 @@ class TestFeatureCard(unittest.TestCase):
             code, _ = self.run_card(tmp, **{"--title": "x" * 200})
             self.assertEqual(code, 2)
 
+    @unittest.skipUnless(_HAS_DEP, _DEP_MSG)
     def test_deterministic_within_environment(self):
         with tempfile.TemporaryDirectory() as tmp:
             _, a = self.run_card(tmp, **{"--out": str(Path(tmp) / "a.png")})

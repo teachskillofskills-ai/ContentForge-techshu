@@ -1,10 +1,10 @@
-# Contributor Code of Conduct
+# Code of Conduct
 
 ## Our Pledge
 
-We — contributors and maintainers of ContentForge and the broader [TechShu Marketing Suite](https://github.com/teachskillofskills-ai) — pledge to make participation in our project a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socioeconomic status, nationality, personal appearance, race, religion, or sexual identity and orientation.
+We — contributors and maintainers of ContentForge and the broader [TechShu Marketing Suite](https://github.com/teachskillofskills-ai) — pledge to make participation in this project a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socioeconomic status, nationality, personal appearance, race, religion, or sexual identity and orientation.
 
-We pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community.
+We pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy environment — for TechShu colleagues working in these repositories and for anyone outside TechShu who reads or files against them.
 
 ## Our Standards
 
@@ -14,7 +14,7 @@ Examples of behavior that contributes to a positive environment:
 - Being respectful of differing opinions, viewpoints, and experiences
 - Giving and gracefully accepting constructive feedback
 - Accepting responsibility, apologizing to those affected by mistakes, and learning from the experience
-- Focusing on what is best for the overall community
+- Focusing on what is best for the people who rely on these plugins
 - Crediting the work of others and respecting their authorship
 
 Examples of unacceptable behavior:
@@ -28,22 +28,22 @@ Examples of unacceptable behavior:
 
 ## Scope
 
-This Code of Conduct applies within all community spaces (this repository, related repositories in the TechShu Marketing Suite, Discussions, Issues, Pull Requests, social channels referencing the project), and also applies when an individual is officially representing the community in public spaces.
+This Code of Conduct applies in this repository and the related TechShu Marketing Suite repositories, including Discussions, Issues and Pull Requests, and applies to TechShu staff and outside participants alike. It also applies when someone is representing these projects in public spaces.
 
 ## Enforcement
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the project maintainer at the email listed on [techshu.ai](https://techshu.ai) or via a private security advisory on this GitHub repository. All complaints will be reviewed and investigated promptly and fairly.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the TechShu AI team via [techshu.ai](https://techshu.ai), through your usual TechShu channel, or via a private security advisory on this GitHub repository. All complaints will be reviewed and investigated promptly and fairly.
 
-Maintainers are obligated to respect the privacy and security of the reporter of any incident.
+The TechShu AI team is obligated to respect the privacy and security of the reporter of any incident.
 
 ## Enforcement Actions
 
-Maintainers will follow these Community Impact Guidelines in determining the consequences for any action they deem in violation:
+The TechShu AI team will follow these Community Impact Guidelines in determining the consequences for any action they deem in violation:
 
 1. **Correction** — Private, written warning, clarifying the nature of the violation and why it was inappropriate. A public apology may be requested.
 2. **Warning** — A warning with consequences for continued behavior. No interaction with the people involved for a specified period.
 3. **Temporary Ban** — A temporary ban from any sort of interaction or public communication with the community for a specified period.
-4. **Permanent Ban** — A permanent ban from any sort of public interaction within the community.
+4. **Permanent Ban** — A permanent ban from any sort of public interaction within these project spaces.
 
 ## Attribution
 

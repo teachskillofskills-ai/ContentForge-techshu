@@ -1,6 +1,19 @@
 # Contributing to ContentForge
 
-Thank you for your interest in contributing to ContentForge! This document provides guidelines and instructions for contributing.
+This document provides guidelines and instructions for contributing to ContentForge.
+
+> **Who this is for.** These repositories are the TechShu line of the marketing plugins:
+> maintained by the TechShu AI team at Indus Net TechShu Digital Pvt. Ltd. for TechShu
+> delivery teams. Changes normally come from inside TechShu — branch in this repository
+> rather than forking. The repositories are public so colleagues can install without a
+> GitHub account; outside issues and pull requests are welcome but are reviewed on
+> TechShu's roadmap, not a community one.
+>
+> If you are a marketer rather than a developer, you do not need this document — see the
+> README for installing and using the plugin.
+
+---
+
 
 ---
 
@@ -21,7 +34,7 @@ This project adheres to a code of conduct that all contributors are expected to 
 - **Be respectful:** Treat everyone with respect and kindness
 - **Be collaborative:** Work together and help each other
 - **Be inclusive:** Welcome diverse perspectives and experiences
-- **Be professional:** Focus on what's best for the project and community
+- **Be professional:** Focus on what's best for the delivery teams who use this
 
 ---
 
@@ -93,11 +106,11 @@ This project adheres to a code of conduct that all contributors are expected to 
 
 ### Setup Steps
 
-1. **Fork the repository**
+1. **Clone the repository**
    ```bash
-   # Fork via GitHub UI, then clone your fork
-   git clone https://github.com/YOUR_USERNAME/contentforge.git
-   cd contentforge
+   # TechShu staff: clone directly. Outside contributors: fork first, then clone your fork.
+   git clone https://github.com/teachskillofskills-ai/ContentForge-techshu.git
+   cd ContentForge-techshu
    ```
 
 2. **Create a branch**
@@ -410,7 +423,7 @@ Fixes #456
 ## Getting Help
 
 **Questions about contributing?**
-- Open a [Discussion](https://github.com/yourusername/contentforge/discussions)
+- Open a [Discussion](https://github.com/teachskillofskills-ai/ContentForge-techshu/discussions)
 - Comment on relevant issue
 - Reach out to maintainers
 

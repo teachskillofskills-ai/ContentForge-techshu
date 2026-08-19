@@ -137,7 +137,12 @@ class TestDescriptionConsistency(unittest.TestCase):
             if manifest_path.name in ("openclaw.plugin.json", "package.json"):
                 continue
             data = json.loads(manifest_path.read_text(encoding="utf-8"))
-            cls.descriptions[manifest_path.name] = data.get("description", "")
+            # Key on the path, not the basename: five of the six Claude-family
+            # manifests are all called "plugin.json", so keying on .name
+            # collapsed them into one entry and the drift guard below never
+            # compared them.
+            key = manifest_path.relative_to(PLUGIN_ROOT).as_posix()
+            cls.descriptions[key] = data.get("description", "")
 
     def test_all_claude_family_manifests_share_description(self):
         unique_descriptions = set(self.descriptions.values())

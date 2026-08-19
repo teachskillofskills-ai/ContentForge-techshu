@@ -6,9 +6,9 @@ The latest minor release of ContentForge receives security fixes. Older minor ve
 
 | Version | Supported |
 |---------|-----------|
-| 3.12.x   | ✅ |
-| 3.11.x   | ⚠️ Security fixes only when trivially backportable |
-| < 3.11   | ❌ Please upgrade |
+| 4.1.x  | ✅ |
+| 4.0.x  | ⚠️ Security fixes only when trivially backportable |
+| < 4.0   | ❌ Please upgrade |
 
 ## Reporting a Vulnerability
 
@@ -16,9 +16,9 @@ The latest minor release of ContentForge receives security fixes. Older minor ve
 
 ### How to report
 
-Use GitHub's [Private Security Advisory](https://github.com/teachskillofskills-ai/ContentForge-techshu/security/advisories/new) feature to report privately. The maintainer will be notified directly and can collaborate with you on a fix before disclosure.
+Use GitHub's [Private Security Advisory](https://github.com/teachskillofskills-ai/ContentForge-techshu/security/advisories/new) feature to report privately. The TechShu AI team will be notified directly and can collaborate with you on a fix before disclosure.
 
-If you cannot use Private Security Advisories, contact the maintainer via the email listed on [techshu.ai](https://techshu.ai) with the subject line `[CF Security]`.
+If you cannot use Private Security Advisories, contact the TechShu AI team via [techshu.ai](https://techshu.ai) with the subject line `[CF Security]`.
 
 ### What to include
 
@@ -34,7 +34,7 @@ If you cannot use Private Security Advisories, contact the maintainer via the em
 - **Initial assessment within 7 days** with severity classification and tentative timeline
 - **Coordinated disclosure** — we'll work with you on a disclosure date that gives users time to update
 - **Credit in the published advisory** unless you prefer to remain anonymous
-- **No bug bounty program** — this is an open-source project maintained by an individual. We deeply appreciate responsible disclosure.
+- **No bug bounty program** — this plugin is maintained by the TechShu AI team at Indus Net TechShu Digital Pvt. Ltd. We deeply appreciate responsible disclosure.
 
 ## Scope
 
@@ -71,4 +71,4 @@ If you are running CF in a sensitive environment (multi-tenant agency setup, reg
 2. **Treat brand data at `~/.claude-marketing/<brand-slug>/` as sensitive.** It contains client strategy documents. Apply filesystem ACLs as you would any client PII.
 3. **Rotate Anthropic API keys quarterly.** Use `/usage` to monitor for anomalous consumption.
 4. **Review SKILL.md edits in PRs.** Skills run with whatever permissions Claude Code has. Treat skill modifications like code review for production systems.
-5. **Pin the plugin version in agency environments.** Don't auto-update production agencies on the same day as release — let community testing happen first.
+5. **Pin the plugin version in agency environments.** Don't auto-update production agencies on the same day as release — let it run on an internal brand first.
