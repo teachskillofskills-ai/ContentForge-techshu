@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+> **TechShu line.** This repository is the TechShu-maintained line of the plugin,
+> rebranded in August 2026 by Indus Net TechShu Digital Pvt. Ltd. Entries below
+> predating the rebrand describe the original releases and may reference features
+> (sponsor links, star CTAs, personal social handles, the suite-brand keyword)
+> that the TechShu line has since removed.
+
 ## [4.1.2] - 2026-08-17
 
 ### Schema-clean hooks manifest (suite-wide fix from digital-marketing-pro#9)
@@ -1701,7 +1707,7 @@ v3.12.9 shipped Cowork-with-Drive routing for the final `.docx` but deferred thr
 
 ### Fixed — `/plugin` scope documentation error
 
-Multiple docs claimed `/plugin` works in Cowork — verified wrong via Indranil's live Cowork testing on 2026-05-26. Corrected in:
+Multiple docs claimed `/plugin` works in Cowork — verified wrong via the author's live Cowork testing on 2026-05-26. Corrected in:
 
 - **`README.md`** — Quick start hero block, "Installs on 5 surfaces" table row, and step 1 of Quick Start all now correctly say: `/plugin` works only in Claude Code (CLI + IDE extension). In Cowork, use the Plugins panel in the UI. The Updating section is similarly corrected — Cowork is now explicitly named alongside claude.ai web and Claude Desktop as environments where `/plugin` doesn't work.
 - **MEMORY note** — corrected. New rule: `/plugin` works ONLY in Claude Code (CLI + IDE extension). Cowork uses UI panel.
@@ -1943,7 +1949,7 @@ All 4 also: dual-copy save works (tracking + `~/Documents/ContentForge/`), valid
 - **Auto-update text** — stale version reference v3.9.5 → v3.12.1
 - **TechShu Marketing Suite** table corrected: DMP "149 skills" → "150 skills"
 - **plugin.json description** rewritten to lead with "Open-source enterprise content production pipeline" and include all current asset counts (19 skills, 13 agents, 11 quality gates, 29-pattern humanizer, 5-platform install). Now references techshu.ai explicitly.
-- **plugin.json keywords expanded 16 → 47** for Claude marketplace + Codex/Cursor/Copilot directory search. Added: `content-pipeline`, `ai-content`, `ai-writing`, `ai-humanizer`, `anti-ai-detection`, `gptzero`, `originality-ai`, `fact-checker`, `docx-generation`, `long-form-content`, `white-papers`, `blog-writing`, `ai-mode`, `ai-overviews`, `internal-linking`, `c2pa`, `content-provenance`, `eu-ai-act`, `article-50`, `claude-code-plugin`, `claude-skills`, `agent-skills`, `anthropic-claude`, `openai-codex`, `cursor-plugin`, `github-copilot`, `antigravity`, `mcp`, `model-context-protocol`, `marketing-plugin`, `ai-marketing`, `neelverse`, and more.
+- **plugin.json keywords expanded 16 → 47** for Claude marketplace + Codex/Cursor/Copilot directory search. Added: `content-pipeline`, `ai-content`, `ai-writing`, `ai-humanizer`, `anti-ai-detection`, `gptzero`, `originality-ai`, `fact-checker`, `docx-generation`, `long-form-content`, `white-papers`, `blog-writing`, `ai-mode`, `ai-overviews`, `internal-linking`, `c2pa`, `content-provenance`, `eu-ai-act`, `article-50`, `claude-code-plugin`, `claude-skills`, `agent-skills`, `anthropic-claude`, `openai-codex`, `cursor-plugin`, `github-copilot`, `antigravity`, `mcp`, `model-context-protocol`, `marketing-plugin`, `ai-marketing`, and more.
 
 ### Fixed
 
@@ -2801,7 +2807,7 @@ Google Sheets has NO HTTP MCP endpoint. Google Drive has NO HTTP MCP endpoint (o
 
 ### Fixed
 
-- **README.md** — Fixed all placeholder URLs ("yourusername" → "indranilbanerjee"), "Your Name" → "Indranil Banerjee", removed "yourcompany", fixed bottom "v1.0.0" → "v3.0.0"
+- **README.md** — Fixed all placeholder URLs and "Your Name" placeholders to the real maintainer identity, removed "yourcompany", fixed bottom "v1.0.0" → "v3.0.0"
 - **Roadmap** — Replaced obsolete "Phase B-E" roadmap with v3.1/3.2/4.0 roadmap
 
 ### Technical Specifications
