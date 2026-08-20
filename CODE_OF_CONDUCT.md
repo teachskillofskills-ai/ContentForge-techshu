@@ -32,7 +32,7 @@ This Code of Conduct applies in this repository and the related TechShu Marketin
 
 ## Enforcement
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the TechShu AI team via [techshu.ai](https://techshu.ai), through your usual TechShu channel, or via a private security advisory on this GitHub repository. All complaints will be reviewed and investigated promptly and fairly.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the TechShu AI team at solutions@techshu.com, through your usual TechShu channel, or via a private security advisory on this GitHub repository. All complaints will be reviewed and investigated promptly and fairly.
 
 The TechShu AI team is obligated to respect the privacy and security of the reporter of any incident.
 
